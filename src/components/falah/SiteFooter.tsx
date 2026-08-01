@@ -6,9 +6,11 @@ export function SiteFooter() {
     <footer className="border-t border-border px-5 py-12 sm:px-8">
       <div className="mx-auto grid max-w-7xl gap-6 sm:flex sm:items-center sm:justify-between">
         <div className="flex min-w-0 items-center gap-3">
-          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-primary text-primary-foreground">
-            <span className="font-display text-lg leading-none">ف</span>
-          </span>
+          <img
+            src={logo}
+            alt="Falah Institut"
+            className="h-10 w-10 shrink-0 rounded-full object-cover"
+          />
           <div className="min-w-0">
             <p className="truncate font-display text-sm font-semibold text-primary">
               Falah Institut
