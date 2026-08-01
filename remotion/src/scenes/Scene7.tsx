@@ -61,13 +61,6 @@ export const Scene7: React.FC = () => {
         style={{
           margin: 0,
           opacity: interpolate(frame, [70, 95], [0, 1], { extrapolateRight: "clamp", extrapolateLeft: "clamp" }),
-          fontFamily body: undefined as never,
-        }}
-      />
-      <p
-        style={{
-          margin: 0,
-          opacity: interpolate(frame, [70, 95], [0, 1], { extrapolateRight: "clamp", extrapolateLeft: "clamp" }),
           fontFamily: display,
           fontSize: 30,
           letterSpacing: 8,
