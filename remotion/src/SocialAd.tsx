@@ -436,12 +436,11 @@ export const SocialAd: React.FC = () => (
           nodes.push(
             <TransitionSeries.Transition
               key={`tat${i}`}
-              presentation={i % 2 === 0 ? wipe({ direction: "from-bottom" }) : fade()}
-              timing={
-                i % 2 === 0
-                  ? springTiming({ config: { damping: 200 }, durationInFrames: TRANSITION })
-                  : linearTiming({ durationInFrames: TRANSITION })
-              }
+              presentation={fade()}
+              timing={linearTiming({
+                durationInFrames: TRANSITION,
+                easing: Easing.inOut(Easing.ease),
+              })}
             />,
           );
         }
