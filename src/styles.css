@@ -194,6 +194,6 @@
 @media (prefers-reduced-motion: reduce) {
   .float-letter {
     animation: none;
-    opacity: 0.12;
+    opacity: 0.3;
   }
 }
