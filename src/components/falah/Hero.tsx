@@ -69,8 +69,16 @@ export function Hero() {
         </div>
 
         <div className="relative min-w-0">
-          <HeroVideo />
-
+          <div className="relative overflow-hidden rounded-[2rem] border border-border shadow-card">
+            <img
+              src={heroPattern}
+              alt="Motif géométrique islamique abstrait en bleu marine, or et vert émeraude"
+              className="h-[22rem] w-full object-cover sm:h-[30rem] lg:h-[34rem]"
+              width={1200}
+              height={800}
+              loading="eager"
+            />
+          </div>
 
           <a
             href={WA_LEVEL_TEST}
