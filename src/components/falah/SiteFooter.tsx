@@ -1,4 +1,5 @@
 import { WA_GENERAL } from "@/data/falah";
+import logo from "@/assets/logo.jpeg";
 
 export function SiteFooter() {
   return (
