@@ -30,7 +30,7 @@ jobs:
       - name: Install and Build
         run: |
           npm install
-          npm run build
+          npx vite build --outDir dist
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
