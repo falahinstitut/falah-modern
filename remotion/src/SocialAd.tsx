@@ -16,8 +16,8 @@ import { PersistentBackground } from "./components/PersistentBackground";
 import { Subtitles } from "./components/Subtitles";
 import { C, body, display } from "./theme";
 
-const TRANSITION = 22;
-const DURATIONS = [150, 195, 105, 105, 135, 320];
+const TRANSITION = 20;
+const DURATIONS = [155, 175, 133, 133, 148, 266];
 export const SOCIAL_TOTAL_FRAMES =
   DURATIONS.reduce((a, b) => a + b, 0) - TRANSITION * (DURATIONS.length - 1);
 
