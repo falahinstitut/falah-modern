@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { WA_GENERAL } from "@/data/falah";
+import logoAsset from "@/assets/falah-logo.png.asset.json";
 import { Icon } from "./Icon";
 
 const links = [
@@ -27,9 +28,13 @@ export function SiteHeader() {
     >
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3.5 sm:px-8">
         <a href="#top" className="flex min-w-0 items-center gap-3">
-          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-primary text-primary-foreground">
-            <span className="font-display text-lg leading-none">ف</span>
-          </span>
+          <img
+            src={logoAsset.url}
+            alt="Falah Institut"
+            width={40}
+            height={40}
+            className="h-10 w-10 shrink-0 rounded-xl object-contain"
+          />
           <span className="min-w-0">
             <span className="block truncate font-display text-[0.95rem] font-semibold leading-tight text-primary">
               Falah Institut
