@@ -20,8 +20,12 @@ export function SiteHeader() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const headerClass = scrolled
+    ? "glass-bar fixed inset-x-0 top-0 z-50"
+    : "border-b border-transparent fixed inset-x-0 top-0 z-50";
+
   return (
-    <header className={scrolled ? "glass-bar fixed inset-x-0 top-0 z-50" : "border-b border-transparent fixed inset-x-0 top-0 z-50"}>
+    <header className={headerClass}>
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3.5 sm:px-8">
         <a href="#top" className="flex min-w-0 items-center gap-3">
           <img
@@ -42,15 +46,17 @@ export function SiteHeader() {
         </a>
         <div className="flex items-center gap-1 sm:gap-6">
           <nav className="hidden items-center gap-6 md:flex">
-            {links.map((l) => (
-              
-                key={l.href}
-                href={l.href}
-                className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
-              >
-                {l.label}
-              </a>
-            ))}
+            {links.map(function (l) {
+              return (
+                
+                  key={l.href}
+                  href={l.href}
+                  className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                >
+                  {l.label}
+                </a>
+              );
+            })}
           </nav>
           
             href={WA_GENERAL}
