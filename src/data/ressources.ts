@@ -2,9 +2,9 @@
  * Espace élèves — contenu à mettre à jour ici.
  *
  * 1) Liens Zoom récurrents : ajoute / modifie les entrées de `zoomRooms`.
- * 2) Documents PDF : dépose tes fichiers dans `public/documents/`
- *    (ex: public/documents/livret-accueil.pdf) puis ajoute une entrée
- *    dans `documents` avec `href: "/documents/livret-accueil.pdf"`.
+ * 2) Documents PDF : ils ne sont plus dans le code. Connecte-toi à
+ *    /ressources avec le mot de passe administrateur (ADMIN_PASSWORD)
+ *    pour téléverser, remplacer ou supprimer les PDF.
  *
  * Le mot de passe de l'espace n'est PAS ici : il est stocké de façon
  * sécurisée dans la variable d'environnement SITE_PASSWORD (modifiable
@@ -43,33 +43,5 @@ export const zoomRooms: ZoomRoom[] = [
     audience: "Enfants",
     href: "https://zoom.us/j/00000000000",
     meetingId: "000 0000 0000",
-  },
-];
-
-export type ResourceDoc = {
-  title: string;
-  description: string;
-  href: string;
-  kind: string;
-};
-
-export const documents: ResourceDoc[] = [
-  {
-    title: "Livret d'accueil",
-    description: "Tout ce qu'il faut savoir pour bien démarrer à l'institut.",
-    href: "/documents/livret-accueil.pdf",
-    kind: "PDF",
-  },
-  {
-    title: "Règlement intérieur",
-    description: "Règles de vie, assiduité et fonctionnement des cours.",
-    href: "/documents/reglement-interieur.pdf",
-    kind: "PDF",
-  },
-  {
-    title: "Supports de cours",
-    description: "Fiches et exercices utilisés pendant les séances.",
-    href: "/documents/supports-de-cours.pdf",
-    kind: "PDF",
   },
 ];
