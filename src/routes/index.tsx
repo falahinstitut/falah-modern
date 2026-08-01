@@ -31,9 +31,7 @@ function Index() {
     <div className="min-h-screen bg-background pb-20 sm:pb-0">
       <SiteHeader />
       <main>
-        <h1 className="sr-only">
-          Falah Institut — cours d'arabe et de Coran en ligne
-        </h1>
+
         <Hero />
         <Advantages />
         <Curriculums />
