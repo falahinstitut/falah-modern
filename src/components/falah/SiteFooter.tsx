@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import { WA_GENERAL } from "@/data/falah";
 import logo from "@/assets/logo.jpeg";
 
