@@ -1,6 +1,8 @@
 import { testimonials, videoTestimonials } from "@/data/falah";
 import { Icon } from "./Icon";
 import { SectionHeading } from "./Primitives";
+import { Reveal } from "./Reveal";
+import { LazyVideo } from "./LazyVideo";
 
 function Stars() {
   return (
@@ -23,8 +25,9 @@ export function Testimonials() {
         />
 
         <div className="mt-14 columns-1 gap-5 sm:columns-2 lg:columns-3 [&>*]:mb-5">
-          {testimonials.map((t) => (
-            <figure key={t.name} className="surface-card break-inside-avoid p-6">
+          {testimonials.map((t, i) => (
+            <Reveal key={t.name} delay={(i % 3) * 90} className="break-inside-avoid">
+            <figure className="surface-card p-6">
               <Stars />
               <blockquote className="mt-4 text-sm leading-relaxed text-foreground/80">
                 {t.text}
@@ -43,6 +46,7 @@ export function Testimonials() {
                 </span>
               </figcaption>
             </figure>
+            </Reveal>
           ))}
         </div>
 
@@ -58,16 +62,10 @@ export function Testimonials() {
 
           <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {videoTestimonials.map((v, i) => (
-              <article key={v.id} className="surface-card overflow-hidden">
+              <Reveal key={v.id} delay={(i % 3) * 90}>
+              <article className="surface-card overflow-hidden">
                 <div className="aspect-video w-full bg-secondary">
-                  <iframe
-                    src={`https://www.youtube-nocookie.com/embed/${v.id}`}
-                    title={`Témoignage de ${v.name}`}
-                    loading={i > 1 ? "lazy" : undefined}
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="h-full w-full border-0"
-                  />
+                  <LazyVideo id={v.id} title={`Témoignage de ${v.name}`} />
                 </div>
                 <div className="min-w-0 p-5">
                   <p className="truncate text-sm font-semibold text-primary">
@@ -78,6 +76,7 @@ export function Testimonials() {
                   </p>
                 </div>
               </article>
+              </Reveal>
             ))}
           </div>
         </div>

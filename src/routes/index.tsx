@@ -9,6 +9,7 @@ import { Hero } from "@/components/falah/Hero";
 import { SiteFooter } from "@/components/falah/SiteFooter";
 import { SiteHeader } from "@/components/falah/SiteHeader";
 import { Testimonials } from "@/components/falah/Testimonials";
+import { Reveal } from "@/components/falah/Reveal";
 import { WhatsAppFab } from "@/components/falah/WhatsAppFab";
 
 const TITLE = "Falah Institut — Cours d'arabe et de Coran en ligne";
@@ -76,12 +77,24 @@ function Index() {
       <main>
 
         <Hero />
-        <Advantages />
-        <Curriculums />
-        <Formats />
-        <Testimonials />
-        <Faq />
-        <FinalCta />
+        <Reveal>
+          <Advantages />
+        </Reveal>
+        <Reveal>
+          <Curriculums />
+        </Reveal>
+        <Reveal>
+          <Formats />
+        </Reveal>
+        <Reveal>
+          <Testimonials />
+        </Reveal>
+        <Reveal>
+          <Faq />
+        </Reveal>
+        <Reveal>
+          <FinalCta />
+        </Reveal>
       </main>
       <SiteFooter />
       <WhatsAppFab />
