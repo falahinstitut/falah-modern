@@ -76,15 +76,17 @@ export function Icon({
   name,
   className = "h-5 w-5",
   strokeWidth = 1.5,
+  filled = false,
 }: {
   name: IconName;
   className?: string;
   strokeWidth?: number;
+  filled?: boolean;
 }) {
   return (
     <svg
       viewBox="0 0 24 24"
-      fill="none"
+      fill={filled ? "currentColor" : "none"}
       stroke="currentColor"
       strokeWidth={strokeWidth}
       strokeLinecap="round"

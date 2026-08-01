@@ -106,7 +106,7 @@ export const collectiveFormat: Format = {
   kind: "Cours collectif",
   name: "En groupe",
   price: "35€",
-  promo: "🎁 17,50€ le premier mois",
+  promo: "1er mois à 17,50€",
   tagline:
     "Apprenez en communauté dans une ambiance motivante et bienveillante.",
   features: [
@@ -125,7 +125,7 @@ export const individualFormats: Format[] = [
     kind: "Individuel",
     name: "Individuel",
     price: "40€",
-    promo: "🎁 20€ le premier mois",
+    promo: "1er mois à 20€",
     tagline: "Un apprentissage sur mesure",
     features: [
       "Cours 1h/semaine",
@@ -142,7 +142,7 @@ export const individualFormats: Format[] = [
     kind: "Individuel",
     name: "Individuel Plus",
     price: "70€",
-    promo: "🎁 35€ le premier mois",
+    promo: "1er mois à 35€",
     tagline: "Un apprentissage sur mesure",
     featured: true,
     features: [

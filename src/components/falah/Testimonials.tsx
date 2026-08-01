@@ -6,7 +6,7 @@ function Stars() {
   return (
     <div className="flex gap-0.5 text-gold">
       {Array.from({ length: 5 }).map((_, i) => (
-        <Icon key={i} name="star" className="h-3.5 w-3.5" strokeWidth={1.2} />
+        <Icon key={i} name="star" className="h-3.5 w-3.5" filled strokeWidth={1} />
       ))}
     </div>
   );
