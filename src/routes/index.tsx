@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Advantages } from "@/components/falah/Advantages";
 import { Curriculums } from "@/components/falah/Curriculums";
 import { Faq } from "@/components/falah/Faq";
+import { FloatingLetters } from "@/components/falah/FloatingLetters";
 import { FinalCta } from "@/components/falah/FinalCta";
 import { Formats } from "@/components/falah/Formats";
 import { Hero } from "@/components/falah/Hero";
