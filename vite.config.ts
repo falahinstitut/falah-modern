@@ -11,14 +11,10 @@ export default defineConfig({
     server: { 
       entry: "server",
       preset: "github-pages",
+      prerender: {
+        crawlLinks: true,
+        routes: ["/"]
+      }
     },
   },
-  // On configure Nitro directement au niveau global pour forcer le pré-rendu de la racine
-  nitro: {
-    preset: "github-pages",
-    prerender: {
-      crawlLinks: true,
-      routes: ["/"]
-    }
-  }
 });
