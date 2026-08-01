@@ -13,7 +13,13 @@ export function HeroVideo() {
 
   const play = () => {
     setStarted(true);
-    requestAnimationFrame(() => void ref.current?.play());
+    requestAnimationFrame(() => {
+      const el = ref.current;
+      if (!el) return;
+      el.muted = false;
+      el.volume = 1;
+      void el.play();
+    });
   };
 
   return (
@@ -25,12 +31,11 @@ export function HeroVideo() {
         preload="none"
         playsInline
         controls={started}
-        muted
-        loop
-        aria-label="Vidéo de présentation de Falah Institut"
+        aria-label="Vidéo de présentation de Falah Institut avec voix off"
       >
         <source src={videoAsset.url} type="video/mp4" />
       </video>
+
 
       {!started && (
         <button
