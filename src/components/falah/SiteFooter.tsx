@@ -40,12 +40,6 @@ export function SiteFooter() {
           >
             WhatsApp
           </a>
-          <Link
-            to="/ressources"
-            className="opacity-70 transition-colors hover:text-primary hover:opacity-100"
-          >
-            Espace élèves
-          </Link>
 
         </div>
       </div>
