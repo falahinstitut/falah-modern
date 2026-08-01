@@ -10,7 +10,9 @@ type IconName =
   | "users"
   | "person"
   | "play"
-  | "plus";
+  | "plus"
+  | "menu"
+  | "close";
 
 const paths: Record<IconName, React.ReactNode> = {
   cap: (
@@ -70,6 +72,16 @@ const paths: Record<IconName, React.ReactNode> = {
     </>
   ),
   plus: <path d="M12 6v12M6 12h12" />,
+  menu: (
+    <>
+      <path d="M4 7h16M4 12h16M4 17h16" />
+    </>
+  ),
+  close: (
+    <>
+      <path d="M18 6 6 18M6 6l12 12" />
+    </>
+  ),
 };
 
 export function Icon({
