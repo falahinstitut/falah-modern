@@ -8,14 +8,17 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
   tanstackStart: {
-    // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     server: { 
       entry: "server",
       preset: "github-pages",
-      // On force la création des fichiers HTML (comme index.html pour la racine)
-      prerender: {
-        routes: ["/"]
-      }
     },
   },
+  // On configure Nitro directement au niveau global pour forcer le pré-rendu de la racine
+  nitro: {
+    preset: "github-pages",
+    prerender: {
+      crawlLinks: true,
+      routes: ["/"]
+    }
+  }
 });
