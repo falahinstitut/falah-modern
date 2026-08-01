@@ -34,22 +34,26 @@ jobs:
 
       - name: Locate and Prepare Output
         run: |
-          echo "Recherche du dossier de compilation..."
+          echo "=== Contenu complet du workspace après le build ==="
+          find . -maxdepth 3 -not -path '*/.*' -not -path './node_modules*'
+          
+          echo "=== Recherche ciblée des fichiers index.html ==="
+          find . -name "index.html" -not -path './node_modules*'
+          
+          # On crée un dossier de déploiement propre
+          mkdir -p deploy_folder
+          
+          # S'il y a un dossier .output/public, on le prend
           if [ -d ".output/public" ]; then
-            echo "Dossier .output/public trouvé (TanStack/Nitro) !"
-            mv .output/public deploy_folder
+            cp -r .output/public/* deploy_folder/
           elif [ -d "dist" ]; then
-            echo "Dossier dist trouvé !"
-            mv dist deploy_folder
+            cp -r dist/* deploy_folder/
           elif [ -d "build" ]; then
-            echo "Dossier build trouvé !"
-            mv build deploy_folder
-          else
-            echo "Erreur : Aucun dossier de build standard n'a été trouvé."
-            echo "Voici le contenu du répertoire pour nous aider à débugger :"
-            ls -la
-            exit 1
+            cp -r build/* deploy_folder/
           fi
+          
+          echo "=== Contenu final du dossier de déploiement ==="
+          ls -la deploy_folder
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
