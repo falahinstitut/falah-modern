@@ -6,6 +6,7 @@ const links = [
   { href: "#cursus", label: "Programmes" },
   { href: "#formats", label: "Tarifs" },
   { href: "#avis", label: "Témoignages" },
+  { href: "#faq", label: "FAQ" },
 ];
 
 export function SiteHeader() {
