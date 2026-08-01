@@ -13,7 +13,13 @@ export function HeroVideo() {
 
   const play = () => {
     setStarted(true);
-    requestAnimationFrame(() => void ref.current?.play());
+    requestAnimationFrame(() => {
+      const el = ref.current;
+      if (!el) return;
+      el.muted = false;
+      el.volume = 1;
+      void el.play();
+    });
   };
 
   return (
@@ -25,12 +31,11 @@ export function HeroVideo() {
         preload="none"
         playsInline
         controls={started}
-        muted
-        loop
-        aria-label="Vidéo de présentation de Falah Institut"
+        aria-label="Vidéo de présentation de Falah Institut avec voix off"
       >
         <source src={videoAsset.url} type="video/mp4" />
       </video>
+
 
       {!started && (
         <button
@@ -43,7 +48,7 @@ export function HeroVideo() {
             <Icon name="play" className="ml-1 h-8 w-8 text-gold" filled strokeWidth={1} />
           </span>
           <span className="rounded-full border border-gold/40 bg-card/85 px-4 py-1.5 text-xs font-semibold tracking-wide text-primary backdrop-blur-sm sm:text-sm">
-            Découvrir Falah Institut — 35 s
+            Découvrir Falah Institut — 1 min 22
           </span>
         </button>
       )}

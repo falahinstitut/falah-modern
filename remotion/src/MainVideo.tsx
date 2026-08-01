@@ -1,4 +1,4 @@
-import { AbsoluteFill } from "remotion";
+import { AbsoluteFill, Audio, Sequence, staticFile } from "remotion";
 import { TransitionSeries, springTiming, linearTiming } from "@remotion/transitions";
 import { fade } from "@remotion/transitions/fade";
 import { wipe } from "@remotion/transitions/wipe";
@@ -11,7 +11,10 @@ import { Scene5 } from "./scenes/Scene5";
 import { Scene6 } from "./scenes/Scene6";
 import { Scene7 } from "./scenes/Scene7";
 
-const DURATIONS = [110, 150, 175, 180, 165, 180, 190];
+// Frames sized around each voice-over track (30 fps) + head/tail padding.
+const DURATIONS = [185, 337, 265, 428, 339, 722, 311];
+export const VO_OFFSET = 12;
+const VOICE = ["s1", "s2", "s3", "s4", "s5", "s6", "s7"];
 const TRANSITION = 22;
 export const TOTAL_FRAMES =
   DURATIONS.reduce((a, b) => a + b, 0) - TRANSITION * (DURATIONS.length - 1);
@@ -26,6 +29,9 @@ export const MainVideo: React.FC = () => (
         const nodes = [
           <TransitionSeries.Sequence key={`s${i}`} durationInFrames={DURATIONS[i]}>
             <Scene />
+            <Sequence from={VO_OFFSET}>
+              <Audio src={staticFile(`audio/${VOICE[i]}.mp3`)} />
+            </Sequence>
           </TransitionSeries.Sequence>,
         ];
         if (i < SCENES.length - 1) {
