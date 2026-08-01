@@ -11,8 +11,11 @@ export default defineConfig({
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     server: { 
       entry: "server",
-      // On force Nitro à générer des fichiers statiques pour GitHub Pages au lieu de Cloudflare
-      preset: "github-pages" 
+      preset: "github-pages",
+      // On force la création des fichiers HTML (comme index.html pour la racine)
+      prerender: {
+        routes: ["/"]
+      }
     },
   },
 });
