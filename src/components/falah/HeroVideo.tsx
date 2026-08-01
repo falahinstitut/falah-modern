@@ -48,7 +48,7 @@ export function HeroVideo() {
             <Icon name="play" className="ml-1 h-8 w-8 text-gold" filled strokeWidth={1} />
           </span>
           <span className="rounded-full border border-gold/40 bg-card/85 px-4 py-1.5 text-xs font-semibold tracking-wide text-primary backdrop-blur-sm sm:text-sm">
-            Découvrir Falah Institut — 1 min 22
+            Découvrir Falah Institut — 1 min 04
           </span>
         </button>
       )}

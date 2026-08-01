@@ -25,8 +25,8 @@ const Stars: React.FC<{ delay: number }> = ({ delay }) => {
 // Vrais avis publiés sur falahinstitut.com
 const QUOTES = [
   {
-    text: "Je recommande vivement cet institut, empreint de valeurs humaines et religieuses. Un cadre respectueux, sérieux et serein, qui permet d'apprendre en toute quiétude. Juste merci d'être là pour nous.",
-    name: "Nehla",
+    text: "Je suis les cours depuis quelques mois, et je prends Allah pour témoin que les cours sont profitables. Les deux professeurs que j'ai sont compétents et ont de la patience dans l'enseignement.",
+    name: "Mohamed",
     via: "WhatsApp",
     accent: C.gold,
     delay: 26,
@@ -36,7 +36,7 @@ const QUOTES = [
     name: "Myriam",
     via: "WhatsApp",
     accent: C.emerald,
-    delay: 373,
+    delay: 240,
   },
 ];
 
