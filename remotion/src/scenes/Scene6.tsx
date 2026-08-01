@@ -22,6 +22,24 @@ const Stars: React.FC<{ delay: number }> = ({ delay }) => {
   );
 };
 
+// Vrais avis publiés sur falahinstitut.com
+const QUOTES = [
+  {
+    text: "Je recommande vivement cet institut, empreint de valeurs humaines et religieuses. Un cadre respectueux, sérieux et serein, qui permet d'apprendre en toute quiétude. Juste merci d'être là pour nous.",
+    name: "Nehla",
+    via: "WhatsApp",
+    accent: C.gold,
+    delay: 26,
+  },
+  {
+    text: "Ma professeure d'arabe est vraiment au top : sérieuse, patiente, bienveillante et très pédagogue. Elle s'adapte à mon rythme, ce qui rend les cours agréables et motivants.",
+    name: "Myriam",
+    via: "WhatsApp",
+    accent: C.emerald,
+    delay: 373,
+  },
+];
+
 export const Scene6: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -40,20 +58,16 @@ export const Scene6: React.FC = () => {
           <Stars delay={14} />
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
-          <Card delay={26} accent={C.gold}>
-            <span style={{ fontFamily: display, fontSize: 36, lineHeight: 1.35, color: C.cream }}>
-              « Des enseignants patients et un vrai suivi. Mon niveau de lecture
-              a changé en quelques mois. »
-            </span>
-            <span style={{ fontFamily: body, fontSize: 26, color: C.gold }}>Élève — cursus arabe</span>
-          </Card>
-          <Card delay={42} accent={C.emerald}>
-            <span style={{ fontFamily: display, fontSize: 36, lineHeight: 1.35, color: C.cream }}>
-              « Mes enfants attendent le cours avec impatience, l'ambiance est
-              bienveillante. »
-            </span>
-            <span style={{ fontFamily: body, fontSize: 26, color: C.emerald }}>Parent — cursus enfants</span>
-          </Card>
+          {QUOTES.map((q) => (
+            <Card key={q.name} delay={q.delay} accent={q.accent}>
+              <span style={{ fontFamily: display, fontSize: 34, lineHeight: 1.35, color: C.cream }}>
+                « {q.text} »
+              </span>
+              <span style={{ fontFamily: body, fontSize: 26, color: q.accent }}>
+                {q.name} — avis {q.via}
+              </span>
+            </Card>
+          ))}
         </div>
       </Frame>
     </AbsoluteFill>
