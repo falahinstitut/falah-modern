@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { WA_GENERAL } from "@/data/falah";
+import logo from "@/assets/logo.jpeg";
 import { Icon } from "./Icon";
 
 const links = [
@@ -29,10 +30,10 @@ export function SiteHeader() {
         
         {/* Logo + Texte */}
         <a href="#top" className="flex min-w-0 items-center gap-3">
-          <img 
-            src="/logo.jpeg" 
-            alt="Falah Institut" 
-            className="h-10 w-10 rounded-full object-cover shrink-0" 
+          <img
+            src={logo}
+            alt="Falah Institut"
+            className="h-10 w-10 rounded-full object-cover shrink-0"
           />
           <span className="min-w-0">
             <span className="block truncate font-display text-[0.95rem] font-semibold leading-tight text-primary">
