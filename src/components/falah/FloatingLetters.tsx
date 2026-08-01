@@ -57,7 +57,7 @@ export function FloatingLetters() {
           style={{ left: l.left, top: l.top }}
         >
           <span
-            className={`float-letter font-display select-none ${TONE_CLASS[l.tone]}`}
+            className={`float-letter font-display font-thin select-none ${TONE_CLASS[l.tone]}`}
             style={{
               left: 0,
               top: 0,
