@@ -68,31 +68,8 @@ export function Hero() {
         </div>
 
         <div className="relative min-w-0">
-          <div className="relative overflow-hidden rounded-[2rem] border border-border bg-card shadow-card">
-            <img
-              src={heroPattern}
-              alt="Motif géométrique abstrait bleu nuit et doré évoquant l'art islamique"
-              width={1200}
-              height={1408}
-              className="h-[22rem] w-full object-cover object-top sm:h-[30rem] lg:h-[34rem]"
-            />
-            <div className="absolute inset-x-4 bottom-4 grid grid-cols-3 gap-2 rounded-2xl border border-border bg-card/85 p-4 backdrop-blur-md">
-              {[
-                { k: "6", v: "élèves max / groupe" },
-                { k: "7j/7", v: "de 9h à 21h" },
-                { k: "0€", v: "évaluation de niveau" },
-              ].map((s) => (
-                <div key={s.k} className="min-w-0 text-center">
-                  <p className="font-display text-lg font-semibold text-primary sm:text-2xl">
-                    {s.k}
-                  </p>
-                  <p className="mt-1 text-[0.68rem] leading-snug text-muted-foreground sm:text-xs">
-                    {s.v}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <HeroVideo />
+
 
           <a
             href={WA_LEVEL_TEST}
