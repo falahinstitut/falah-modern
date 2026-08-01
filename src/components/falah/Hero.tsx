@@ -1,7 +1,8 @@
-import heroPattern from "@/assets/hero-pattern.jpg";
 import { WA_GENERAL, WA_LEVEL_TEST, highlights } from "@/data/falah";
+import { HeroVideo } from "./HeroVideo";
 import { Icon } from "./Icon";
 import { WhatsAppButton } from "./Primitives";
+
 
 export function Hero() {
   return (
