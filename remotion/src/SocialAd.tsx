@@ -1,6 +1,7 @@
 import {
   AbsoluteFill,
   Audio,
+  Easing,
   Img,
   interpolate,
   Sequence,
@@ -9,15 +10,14 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import { TransitionSeries, springTiming, linearTiming } from "@remotion/transitions";
+import { TransitionSeries, linearTiming } from "@remotion/transitions";
 import { fade } from "@remotion/transitions/fade";
-import { wipe } from "@remotion/transitions/wipe";
 import { PersistentBackground } from "./components/PersistentBackground";
 import { Subtitles } from "./components/Subtitles";
 import { C, body, display } from "./theme";
 
-const TRANSITION = 22;
-const DURATIONS = [150, 195, 105, 105, 135, 320];
+const TRANSITION = 20;
+const DURATIONS = [155, 175, 133, 133, 148, 266];
 export const SOCIAL_TOTAL_FRAMES =
   DURATIONS.reduce((a, b) => a + b, 0) - TRANSITION * (DURATIONS.length - 1);
 
@@ -436,12 +436,11 @@ export const SocialAd: React.FC = () => (
           nodes.push(
             <TransitionSeries.Transition
               key={`tat${i}`}
-              presentation={i % 2 === 0 ? wipe({ direction: "from-bottom" }) : fade()}
-              timing={
-                i % 2 === 0
-                  ? springTiming({ config: { damping: 200 }, durationInFrames: TRANSITION })
-                  : linearTiming({ durationInFrames: TRANSITION })
-              }
+              presentation={fade()}
+              timing={linearTiming({
+                durationInFrames: TRANSITION,
+                easing: Easing.inOut(Easing.ease),
+              })}
             />,
           );
         }
