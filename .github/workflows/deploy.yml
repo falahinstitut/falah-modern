@@ -32,25 +32,28 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Locate and Prepare Output
+      - name: Generate index.html and Prepare Output
         run: |
-          echo "=== Contenu complet du workspace après le build ==="
-          find . -maxdepth 3 -not -path '*/.*' -not -path './node_modules*'
-          
-          echo "=== Recherche ciblée des fichiers index.html ==="
-          find . -name "index.html" -not -path './node_modules*'
-          
-          # On crée un dossier de déploiement propre
+          echo "Préparation du dossier de déploiement..."
           mkdir -p deploy_folder
           
-          # S'il y a un dossier .output/public, on le prend
+          # On copie les assets générés
           if [ -d ".output/public" ]; then
             cp -r .output/public/* deploy_folder/
-          elif [ -d "dist" ]; then
-            cp -r dist/* deploy_folder/
-          elif [ -d "build" ]; then
-            cp -r build/* deploy_folder/
           fi
+          
+          echo "Démarrage du serveur local pour capturer l'application..."
+          PORT=3000 node .output/server/index.mjs &
+          SERVER_PID=$!
+          
+          echo "Attente de 5 secondes pour que le serveur démarre..."
+          sleep 5
+          
+          echo "Capture de la page d'accueil vers index.html..."
+          curl -s http://localhost:3000 > deploy_folder/index.html
+          
+          echo "Arrêt du serveur local..."
+          kill $SERVER_PID
           
           echo "=== Contenu final du dossier de déploiement ==="
           ls -la deploy_folder
