@@ -26,8 +26,9 @@ export function FloatingLetters() {
       frame = 0;
       const y = window.scrollY;
       wrappersRef.current.forEach((el, i) => {
-        if (!el) return;
-        el.style.transform = `translate3d(0, ${-y * LETTERS[i].speed}px, 0)`;
+        const speed = LETTERS[i]?.speed;
+        if (!el || speed === undefined) return;
+        el.style.transform = `translate3d(0, ${-y * speed}px, 0)`;
       });
     };
     const onScroll = () => {
