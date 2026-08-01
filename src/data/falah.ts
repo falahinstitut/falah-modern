@@ -1,4 +1,4 @@
-export const WHATSAPP_PHONE = "0033651969750";
+export const WHATSAPP_PHONE = "33651969750";
 
 export function waLink(message: string) {
   return `https://api.whatsapp.com/send?phone=${WHATSAPP_PHONE}&text=${encodeURIComponent(message)}`;
