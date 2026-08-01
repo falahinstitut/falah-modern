@@ -3,7 +3,6 @@ name: Deploy React to GitHub Pages
 on:
   push:
     branches: ["main"]
-
   workflow_dispatch:
 
 permissions:
@@ -27,15 +26,35 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install and Build
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Locate and Prepare Output
         run: |
-          npm install
-          npx vite build --outDir dist
+          echo "Recherche du dossier de compilation..."
+          if [ -d ".output/public" ]; then
+            echo "Dossier .output/public trouvé (TanStack/Nitro) !"
+            mv .output/public deploy_folder
+          elif [ -d "dist" ]; then
+            echo "Dossier dist trouvé !"
+            mv dist deploy_folder
+          elif [ -d "build" ]; then
+            echo "Dossier build trouvé !"
+            mv build deploy_folder
+          else
+            echo "Erreur : Aucun dossier de build standard n'a été trouvé."
+            echo "Voici le contenu du répertoire pour nous aider à débugger :"
+            ls -la
+            exit 1
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './deploy_folder'
 
   deploy:
     environment:
