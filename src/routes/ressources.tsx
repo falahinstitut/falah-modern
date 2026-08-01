@@ -6,10 +6,13 @@ import { Icon } from "@/components/falah/Icon";
 import { SiteFooter } from "@/components/falah/SiteFooter";
 import { SiteHeader } from "@/components/falah/SiteHeader";
 import {
+  deleteDocument,
   getRessources,
   lockRessources,
+  requestDocumentUpload,
   unlockRessources,
   type RessourcesPayload,
+  type StoredDoc,
 } from "@/lib/gate.functions";
 
 const TITLE = "Espace élèves — Falah Institut";
@@ -178,40 +181,151 @@ function Unlocked({
         </div>
       </section>
 
-      <section>
-        <p className="eyebrow">Documents</p>
-        <h2 className="mt-2 text-2xl font-semibold text-primary sm:text-3xl">
-          Livrets et supports
-        </h2>
+      <DocumentsSection uploads={data.uploads} admin={data.admin} />
+    </div>
+  );
+}
+
+function formatSize(bytes: number) {
+  if (!bytes) return "";
+  const mb = bytes / (1024 * 1024);
+  return mb >= 1 ? `${mb.toFixed(1)} Mo` : `${Math.max(1, Math.round(bytes / 1024))} Ko`;
+}
+
+function DocumentsSection({
+  uploads,
+  admin,
+}: {
+  uploads: StoredDoc[];
+  admin: boolean;
+}) {
+  const router = useRouter();
+  const requestUpload = useServerFn(requestDocumentUpload);
+  const removeDoc = useServerFn(deleteDocument);
+  const [busy, setBusy] = useState(false);
+  const [message, setMessage] = useState<string | null>(null);
+
+  async function onFiles(files: FileList | null) {
+    if (!files || files.length === 0) return;
+    setBusy(true);
+    setMessage(null);
+    try {
+      for (const file of Array.from(files)) {
+        if (file.type !== "application/pdf" && !file.name.toLowerCase().endsWith(".pdf")) {
+          setMessage("Seuls les fichiers PDF sont acceptés.");
+          continue;
+        }
+        if (file.size > 25 * 1024 * 1024) {
+          setMessage(`${file.name} dépasse 25 Mo.`);
+          continue;
+        }
+        const res = await requestUpload({ data: { fileName: file.name } });
+        if (!res.ok) {
+          setMessage("Téléversement refusé. Reconnectez-vous en tant qu'administrateur.");
+          continue;
+        }
+        const { supabase } = await import("@/integrations/supabase/client");
+        const { error } = await supabase.storage
+          .from("documents")
+          .uploadToSignedUrl(res.path, res.token, file, {
+            contentType: "application/pdf",
+            upsert: true,
+          });
+        if (error) setMessage(`Échec du téléversement de ${file.name}.`);
+      }
+      await router.invalidate();
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  async function onDelete(name: string) {
+    if (!window.confirm(`Supprimer définitivement « ${name} » ?`)) return;
+    setBusy(true);
+    setMessage(null);
+    const res = await removeDoc({ data: { name } });
+    if (!res.ok) setMessage("Suppression impossible.");
+    await router.invalidate();
+    setBusy(false);
+  }
+
+  return (
+    <section>
+      <p className="eyebrow">Documents</p>
+      <h2 className="mt-2 text-2xl font-semibold text-primary sm:text-3xl">
+        Livrets et supports
+      </h2>
+
+      {admin ? (
+        <div className="surface-card mt-6 p-6">
+          <p className="text-sm font-semibold text-primary">Espace administrateur</p>
+          <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+            Ajoutez des PDF (25 Mo max). Un fichier portant le même nom remplace
+            l'ancien.
+          </p>
+          <label className="mt-4 inline-flex cursor-pointer items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift">
+            {busy ? "Envoi en cours…" : "Téléverser des PDF"}
+            <input
+              type="file"
+              accept="application/pdf"
+              multiple
+              disabled={busy}
+              className="sr-only"
+              onChange={(e) => {
+                void onFiles(e.currentTarget.files);
+                e.currentTarget.value = "";
+              }}
+            />
+          </label>
+          {message ? (
+            <p className="mt-3 text-sm text-destructive">{message}</p>
+          ) : null}
+        </div>
+      ) : null}
+
+      {uploads.length === 0 ? (
+        <p className="mt-6 text-sm text-muted-foreground">
+          Aucun document disponible pour le moment.
+        </p>
+      ) : (
         <div className="mt-6 grid gap-4 md:grid-cols-3">
-          {data.documents.map((doc) => (
-            <a
-              key={doc.title}
-              href={doc.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="surface-card group flex flex-col p-6"
-            >
+          {uploads.map((doc) => (
+            <div key={doc.name} className="surface-card group flex flex-col p-6">
               <span className="inline-flex w-fit rounded-full bg-gold-soft px-3 py-1 text-[0.65rem] font-bold tracking-[0.16em] text-gold">
-                {doc.kind}
+                PDF
               </span>
               <span className="mt-4 font-display text-lg font-semibold text-primary">
                 {doc.title}
               </span>
-              <span className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                {doc.description}
+              <span className="mt-1 text-sm text-muted-foreground">
+                {formatSize(doc.size)}
               </span>
-              <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-primary">
+              <a
+                href={doc.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-primary"
+              >
                 Ouvrir
                 <Icon
                   name="arrow"
                   className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
                 />
-              </span>
-            </a>
+              </a>
+              {admin ? (
+                <button
+                  type="button"
+                  disabled={busy}
+                  onClick={() => void onDelete(doc.name)}
+                  className="mt-4 w-fit rounded-full border border-border px-4 py-2 text-xs font-semibold text-destructive transition-colors hover:border-destructive disabled:opacity-60"
+                >
+                  Supprimer
+                </button>
+              ) : null}
+            </div>
           ))}
         </div>
-      </section>
-    </div>
+      )}
+    </section>
   );
 }
