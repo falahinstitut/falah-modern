@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { WA_GENERAL } from "@/data/falah";
+import logo from "@/assets/logo.jpeg";
 import { Icon } from "./Icon";
 
 const links = [
