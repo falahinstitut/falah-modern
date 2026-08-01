@@ -39,7 +39,7 @@ jobs:
           
           mkdir -p deploy_folder
           
-          # Avec le preset static, Nitro place les fichiers ici :
+          # Copie des fichiers statiques générés par Nitro
           if [ -d ".output/public" ]; then
             cp -r .output/public/* deploy_folder/
           elif [ -d ".output" ]; then
@@ -48,7 +48,17 @@ jobs:
             cp -r dist/* deploy_folder/
           fi
           
-          echo "=== Vérification de la présence de index.html ==="
+          # Astuce GitHub Pages pour les SPA (TanStack Router) : 
+          # On duplique index.html en 404.html pour que GitHub Pages renvoie l'app React 
+          # sur n'importe quelle route au lieu d'une 404 brute.
+          if [ -f "deploy_folder/index.html" ]; then
+            cp deploy_folder/index.html deploy_folder/404.html
+            echo "Fichier 404.html généré avec succès !"
+          else
+            echo "Attention : index.html introuvable dans deploy_folder !"
+          fi
+          
+          echo "=== Vérification finale ==="
           ls -la deploy_folder
 
       - name: Upload artifact
