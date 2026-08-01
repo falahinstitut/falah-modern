@@ -12,7 +12,7 @@ import { Scene6 } from "./scenes/Scene6";
 import { Scene7 } from "./scenes/Scene7";
 
 // Frames sized around each voice-over track (30 fps) + head/tail padding.
-const DURATIONS = [185, 337, 265, 428, 339, 722, 311];
+const DURATIONS = [130, 290, 225, 370, 300, 500, 240];
 export const VO_OFFSET = 12;
 const VOICE = ["s1", "s2", "s3", "s4", "s5", "s6", "s7"];
 const TRANSITION = 22;
