@@ -49,6 +49,9 @@ const SCHEMA = {
   },
 };
 
+const CANONICAL_URL = "https://falahinstitut.com";
+const OG_IMAGE_URL = "https://falahinstitut.com/og-image.jpg";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -57,8 +60,17 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: CANONICAL_URL },
+      { property: "og:image", content: OG_IMAGE_URL },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Falah Institut — Cours d'arabe et de Coran en ligne" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: OG_IMAGE_URL },
+      { name: "twitter:title", content: TITLE },
+      { name: "twitter:description", content: DESCRIPTION },
     ],
+    links: [{ rel: "canonical", href: CANONICAL_URL }],
     scripts: [
       {
         type: "application/ld+json",
