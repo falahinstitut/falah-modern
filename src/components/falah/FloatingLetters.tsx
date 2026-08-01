@@ -12,9 +12,9 @@ const LETTERS = [
 ];
 
 const TONE_CLASS: Record<string, string> = {
-  gold: "text-gold/30",
-  navy: "text-primary/20",
-  emerald: "text-emerald/25",
+  gold: "text-gold/60",
+  navy: "text-primary/45",
+  emerald: "text-emerald/50",
 };
 
 export function FloatingLetters() {
