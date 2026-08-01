@@ -53,13 +53,14 @@ export function FloatingLetters() {
           ref={(el) => {
             wrappersRef.current[i] = el;
           }}
-          className="absolute left-0 top-0 will-change-transform"
+          className="absolute will-change-transform"
+          style={{ left: l.left, top: l.top }}
         >
           <span
             className={`float-letter font-display select-none ${TONE_CLASS[l.tone]}`}
             style={{
-              left: l.left,
-              top: l.top,
+              left: 0,
+              top: 0,
               fontSize: l.size,
               animationDelay: l.delay,
               animationDuration: l.duration,
