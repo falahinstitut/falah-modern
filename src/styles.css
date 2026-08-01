@@ -166,27 +166,21 @@
 /* Arabic letters drifting slowly in the background */
 @keyframes float-letter-drift {
   0% {
-    transform: translate3d(0, 12vh, 0) rotate(0deg);
-    opacity: 0;
+    transform: translate3d(0, 0, 0) rotate(-4deg);
   }
-  12% {
-    opacity: 1;
-  }
-  88% {
-    opacity: 1;
+  50% {
+    transform: translate3d(18px, -28px, 0) rotate(5deg);
   }
   100% {
-    transform: translate3d(4vw, -115vh, 0) rotate(18deg);
-    opacity: 0;
+    transform: translate3d(0, 0, 0) rotate(-4deg);
   }
 }
 
 @utility float-letter {
   position: absolute;
-  bottom: -12vh;
   line-height: 1;
   animation-name: float-letter-drift;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   will-change: transform, opacity;
 }
