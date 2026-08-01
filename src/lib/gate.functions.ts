@@ -1,7 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import { useSession } from "@tanstack/react-start/server";
 
-import type { ResourceDoc, ZoomRoom } from "@/data/ressources";
+import type { ZoomRoom } from "@/data/ressources";
 
 export type StoredDoc = {
   name: string;
@@ -17,7 +17,6 @@ export type RessourcesPayload =
       unlocked: true;
       admin: boolean;
       zoomRooms: ZoomRoom[];
-      documents: ResourceDoc[];
       uploads: StoredDoc[];
     };
 
@@ -55,7 +54,7 @@ export const lockRessources = createServerFn({ method: "POST" }).handler(async (
 
 export const getRessources = createServerFn({ method: "GET" }).handler(
   async (): Promise<RessourcesPayload> => {
-    const { documents, zoomRooms } = await import("@/data/ressources");
+    const { zoomRooms } = await import("@/data/ressources");
     const session = await getSession();
     if (!session.data.unlocked) return { unlocked: false };
 
@@ -64,7 +63,6 @@ export const getRessources = createServerFn({ method: "GET" }).handler(
       unlocked: true,
       admin: Boolean(session.data.admin),
       zoomRooms,
-      documents,
       uploads: await listDocuments(),
     };
   },
