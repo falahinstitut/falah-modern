@@ -1,20 +1,20 @@
 import { useEffect, useRef } from "react";
 
 const LETTERS = [
-  { char: "ا", left: "4%", top: "16%", size: "4.5rem", delay: "-1s", duration: "8s", tone: "gold", speed: 0.35 },
-  { char: "ب", left: "84%", top: "24%", size: "3.5rem", delay: "-4s", duration: "10s", tone: "navy", speed: 0.6 },
-  { char: "ج", left: "12%", top: "40%", size: "5rem", delay: "-6s", duration: "11s", tone: "emerald", speed: 0.45 },
-  { char: "د", left: "72%", top: "52%", size: "4rem", delay: "-2s", duration: "9s", tone: "gold", speed: 0.7 },
-  { char: "ر", left: "42%", top: "68%", size: "5rem", delay: "-7s", duration: "12s", tone: "navy", speed: 0.3 },
-  { char: "س", left: "88%", top: "76%", size: "4.5rem", delay: "-3s", duration: "10s", tone: "emerald", speed: 0.55 },
-  { char: "ع", left: "24%", top: "84%", size: "5.5rem", delay: "-8s", duration: "13s", tone: "gold", speed: 0.4 },
-  { char: "م", left: "60%", top: "32%", size: "3.75rem", delay: "-5s", duration: "9s", tone: "navy", speed: 0.65 },
+  { char: "ا", left: "6%", top: "18%", size: "1.75rem", delay: "-1s", duration: "10s", tone: "gold", speed: 0.35 },
+  { char: "ب", left: "88%", top: "26%", size: "1.5rem", delay: "-4s", duration: "12s", tone: "navy", speed: 0.6 },
+  { char: "ج", left: "14%", top: "42%", size: "2rem", delay: "-6s", duration: "13s", tone: "emerald", speed: 0.45 },
+  { char: "د", left: "74%", top: "54%", size: "1.6rem", delay: "-2s", duration: "11s", tone: "gold", speed: 0.7 },
+  { char: "ر", left: "44%", top: "70%", size: "2rem", delay: "-7s", duration: "14s", tone: "navy", speed: 0.3 },
+  { char: "س", left: "90%", top: "78%", size: "1.75rem", delay: "-3s", duration: "12s", tone: "emerald", speed: 0.55 },
+  { char: "ع", left: "26%", top: "86%", size: "2.25rem", delay: "-8s", duration: "15s", tone: "gold", speed: 0.4 },
+  { char: "م", left: "62%", top: "34%", size: "1.6rem", delay: "-5s", duration: "11s", tone: "navy", speed: 0.65 },
 ];
 
 const TONE_CLASS: Record<string, string> = {
-  gold: "text-gold/55",
-  navy: "text-primary/35",
-  emerald: "text-emerald/45",
+  gold: "text-gold/30",
+  navy: "text-primary/20",
+  emerald: "text-emerald/25",
 };
 
 export function FloatingLetters() {
