@@ -32,7 +32,7 @@ export function Hero() {
           <h1 className="mt-6 text-[2.6rem] font-semibold leading-[1.03] text-primary sm:text-6xl lg:text-[4.25rem]">
             Apprenez l'
             <span className="italic text-gold">Arabe</span>
-            <br />& le <span className="italic text-primary">Coran</span> en
+            <br />et le <span className="italic text-gold">Coran</span> en
             ligne
           </h1>
 
