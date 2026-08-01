@@ -3,10 +3,9 @@ import { WA_GENERAL } from "@/data/falah";
 import { Icon } from "./Icon";
 
 const links = [
-  { href: "#cursus", label: "Cursus" },
-  { href: "#formats", label: "Formats" },
-  { href: "#avis", label: "Avis" },
-  { href: "#faq", label: "FAQ" },
+  { href: "#cursus", label: "Programmes" },
+  { href: "#formats", label: "Tarifs" },
+  { href: "#avis", label: "Témoignages" },
 ];
 
 export function SiteHeader() {
