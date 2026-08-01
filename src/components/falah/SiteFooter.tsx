@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import { WA_GENERAL } from "@/data/falah";
 import logo from "@/assets/logo.jpeg";
 
@@ -40,12 +39,6 @@ export function SiteFooter() {
           >
             WhatsApp
           </a>
-          <Link
-            to="/ressources"
-            className="opacity-70 transition-colors hover:text-primary hover:opacity-100"
-          >
-            Espace élèves
-          </Link>
 
         </div>
       </div>
