@@ -5,7 +5,12 @@ import { useState } from "react";
 import { Icon } from "@/components/falah/Icon";
 import { SiteFooter } from "@/components/falah/SiteFooter";
 import { SiteHeader } from "@/components/falah/SiteHeader";
-import { getRessources, lockRessources, unlockRessources } from "@/lib/gate.functions";
+import {
+  getRessources,
+  lockRessources,
+  unlockRessources,
+  type RessourcesPayload,
+} from "@/lib/gate.functions";
 
 const TITLE = "Espace élèves — Falah Institut";
 const DESCRIPTION =
@@ -115,7 +120,7 @@ function UnlockForm() {
 function Unlocked({
   data,
 }: {
-  data: Extract<ReturnType<typeof Route.useLoaderData>, { unlocked: true }>;
+  data: Extract<RessourcesPayload, { unlocked: true }>;
 }) {
   const router = useRouter();
   const lock = useServerFn(lockRessources);
