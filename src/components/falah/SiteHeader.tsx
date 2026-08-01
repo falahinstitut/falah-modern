@@ -26,7 +26,14 @@ export function SiteHeader() {
   return (
     <header className={headerClass}>
       <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3.5 sm:px-8">
+        
+        {/* Logo + Texte */}
         <a href="#top" className="flex min-w-0 items-center gap-3">
+          <img 
+            src="/logo.jpeg" 
+            alt="Falah Institut" 
+            className="h-10 w-10 rounded-full object-cover shrink-0" 
+          />
           <span className="min-w-0">
             <span className="block truncate font-display text-[0.95rem] font-semibold leading-tight text-primary">
               Falah Institut
@@ -36,11 +43,12 @@ export function SiteHeader() {
             </span>
           </span>
         </a>
+
         <div className="flex items-center gap-1 sm:gap-6">
           <nav className="hidden items-center gap-6 md:flex">
             {links.map(function (l) {
               return (
-                
+                <a
                   key={l.href}
                   href={l.href}
                   className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
@@ -51,6 +59,7 @@ export function SiteHeader() {
             })}
           </nav>
           
+          <a
             href={WA_GENERAL}
             target="_blank"
             rel="noopener noreferrer"
