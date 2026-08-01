@@ -15,6 +15,39 @@ const TITLE = "Falah Institut — Cours d'arabe et de Coran en ligne";
 const DESCRIPTION =
   "Cours d'arabe et de Coran en ligne via Zoom pour hommes, femmes et enfants : cursus débutant, langue arabe et mémorisation, en groupe ou individuel, 7j/7 de 9h à 21h.";
 
+const SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  name: "Falah Institut",
+  description: DESCRIPTION,
+  url: "https://falahinstitut.com",
+  telephone: "+33 6 51 96 97 50",
+  areaServed: "FR",
+  sameAs: [],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Cours d’arabe et de Coran",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Course",
+          name: "Cours collectif d’arabe et de Coran",
+          description: "Cours en petit groupe, 2h/semaine, groupes non mixtes.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Course",
+          name: "Cours individuel d’arabe et de Coran",
+          description: "Cours privés 1h ou 2h/semaine, horaires flexibles.",
+        },
+      },
+    ],
+  },
+};
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -22,6 +55,14 @@ export const Route = createFileRoute("/")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        innerHTML: JSON.stringify(SCHEMA),
+      },
     ],
   }),
   component: Index,
