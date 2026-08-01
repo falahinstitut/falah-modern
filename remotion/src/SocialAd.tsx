@@ -1,6 +1,7 @@
 import {
   AbsoluteFill,
   Audio,
+  Easing,
   Img,
   interpolate,
   Sequence,
@@ -9,9 +10,8 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import { TransitionSeries, springTiming, linearTiming } from "@remotion/transitions";
+import { TransitionSeries, linearTiming } from "@remotion/transitions";
 import { fade } from "@remotion/transitions/fade";
-import { wipe } from "@remotion/transitions/wipe";
 import { PersistentBackground } from "./components/PersistentBackground";
 import { Subtitles } from "./components/Subtitles";
 import { C, body, display } from "./theme";
