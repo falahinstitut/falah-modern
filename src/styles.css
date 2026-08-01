@@ -162,3 +162,38 @@
   backdrop-filter: blur(14px) saturate(140%);
   border-bottom: 1px solid var(--color-border);
 }
+
+/* Arabic letters drifting slowly in the background */
+@keyframes float-letter-drift {
+  0% {
+    transform: translate3d(0, 12vh, 0) rotate(0deg);
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  88% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(4vw, -115vh, 0) rotate(18deg);
+    opacity: 0;
+  }
+}
+
+@utility float-letter {
+  position: absolute;
+  bottom: -12vh;
+  line-height: 1;
+  animation-name: float-letter-drift;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .float-letter {
+    animation: none;
+    opacity: 0.12;
+  }
+}
