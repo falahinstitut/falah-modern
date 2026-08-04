@@ -59,8 +59,8 @@ function ConditionsGenerales() {
               <p className="mt-2">
                 Les tarifs en vigueur sont ceux affichés sur le site au moment de
                 l’inscription. Le paiement s’effectue mensuellement, en début de
-                mois. L’offre « 1er cours à 1 euro, pour découvrir nos cours avant
-                de vous engager » s’applique au premier cours uniquement.
+                mois. L’offre « 1ère séance à 1 euro, pour découvrir nos cours avant
+                de vous engager » s’applique à la première séance uniquement.
               </p>
             </section>
 
