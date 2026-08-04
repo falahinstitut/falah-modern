@@ -27,7 +27,7 @@ export function Hero() {
         <div className="min-w-0">
           <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold-soft px-3.5 py-1.5 text-[0.72rem] font-semibold tracking-wide text-primary">
             <Icon name="star" className="h-3.5 w-3.5 text-gold" filled strokeWidth={1} />
-            −50% sur votre 1er mois
+            1er cours à 1€
           </span>
 
           <h1 className="mt-6 text-[2.6rem] font-semibold leading-[1.03] text-primary sm:text-6xl lg:text-[4.25rem]">

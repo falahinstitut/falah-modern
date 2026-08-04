@@ -59,8 +59,8 @@ function ConditionsGenerales() {
               <p className="mt-2">
                 Les tarifs en vigueur sont ceux affichés sur le site au moment de
                 l’inscription. Le paiement s’effectue mensuellement, en début de
-                mois. L’offre « −50 % sur le 1er mois » s’applique à la première
-                mensualité uniquement.
+                mois. L’offre « 1er cours à 1 €, pour découvrir notre méthode avant
+                de vous engager » s’applique au premier cours uniquement.
               </p>
             </section>
 
