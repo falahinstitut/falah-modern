@@ -30,6 +30,10 @@ export function Hero() {
             1er cours à 1€
           </span>
 
+          <p className="mt-3 max-w-md text-sm font-medium leading-snug text-gold sm:text-base">
+            Premier cours à 1 euro pour découvrir notre méthode avant de vous engager.
+          </p>
+
           <h1 className="mt-6 text-[2.6rem] font-semibold leading-[1.03] text-primary sm:text-6xl lg:text-[4.25rem]">
             Apprenez l'
             <span className="italic text-gold">Arabe</span>
