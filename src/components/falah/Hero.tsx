@@ -25,12 +25,7 @@ export function Hero() {
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-16 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 lg:pb-24">
         <div className="min-w-0">
-          <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold-soft px-3.5 py-1.5 text-[0.72rem] font-semibold tracking-wide text-primary">
-            <Icon name="star" className="h-3.5 w-3.5 text-gold" filled strokeWidth={1} />
-            1er cours à 1€
-          </span>
-
-          <p className="mt-3 max-w-md text-sm font-medium leading-snug text-gold sm:text-base">
+          <p className="max-w-md text-sm font-semibold leading-snug text-gold sm:text-base">
             Premier cours à 1 euro pour découvrir notre méthode avant de vous engager.
           </p>
 
