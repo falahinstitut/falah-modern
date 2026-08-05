@@ -13,8 +13,8 @@ const reviews = [
     text: "Les professeurs sont à l'écoute, patients et très gentils",
   },
   {
-    name: "Myriam",
-    text: "Mon enseignante est à l'écoute et disponible, j'ai vraiment bien progressé",
+    name: "Kira",
+    text: "Très belle expérience, prof très pédagogue, formation très positive",
   },
   {
     name: "Boukhanoufa",
@@ -46,20 +46,8 @@ export function TrustpilotSection() {
                 className="inline-flex items-center gap-2 rounded-full bg-card px-3 py-1.5 text-sm font-semibold text-foreground shadow-soft transition-colors hover:text-emerald"
               >
                 <span className="text-emerald">★</span>
-                Trustpilot
+                Avis Trustpilot
               </a>
-
-              <div className="mt-5 flex flex-wrap items-center gap-4">
-                <p className="font-display text-5xl font-semibold text-primary sm:text-6xl">
-                  4.2
-                </p>
-                <div className="min-w-0">
-                  <TrustpilotStars className="text-lg" />
-                  <p className="mt-1 text-sm font-medium text-muted-foreground">
-                    <span className="text-emerald">Great</span> — basé sur 6 avis vérifiés
-                  </p>
-                </div>
-              </div>
             </div>
 
             <a
@@ -93,3 +81,4 @@ export function TrustpilotSection() {
     </section>
   );
 }
+
