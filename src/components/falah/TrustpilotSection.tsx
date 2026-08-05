@@ -20,7 +20,16 @@ const reviews = [
     name: "Boukhanoufa",
     text: "Les profs sont très à l'écoute de nos besoins d'apprentissage",
   },
+  {
+    name: "Myriam",
+    text: "Mon enseignante est à l'écoute et disponible, j'ai vraiment bien progressé",
+  },
+  {
+    name: "Nehla",
+    text: "Un cadre respectueux, sérieux et serein, on apprend en toute quiétude",
+  },
 ];
+
 
 function TrustpilotStars({ className }: { className?: string }) {
   return (
@@ -62,7 +71,7 @@ export function TrustpilotSection() {
           </div>
         </Reveal>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {reviews.map((review, i) => (
             <Reveal key={review.name} delay={i * 90}>
               <article className="surface-card flex h-full flex-col p-6">
