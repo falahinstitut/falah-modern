@@ -89,7 +89,7 @@ export function TrustpilotSection() {
                 <p className="mt-4 text-sm font-semibold text-foreground">
                   {review.title}
                 </p>
-                <blockquote className="mt-2 flex-1 text-sm leading-relaxed text-foreground/85">
+                <blockquote className="mt-2 flex-1 whitespace-pre-line text-sm leading-relaxed text-foreground/85">
                   “{review.text}”
                 </blockquote>
                 <p className="mt-5 text-sm font-semibold text-primary">
