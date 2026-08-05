@@ -103,13 +103,15 @@ function Index() {
           <Testimonials />
         </Reveal>
         <Reveal>
+          <TrustpilotSection />
+        </Reveal>
+        <Reveal>
           <Faq />
         </Reveal>
         <Reveal>
           <FinalCta />
         </Reveal>
       </main>
-      <TrustpilotSection />
       <SiteFooter />
       <WhatsAppFab />
     </div>
