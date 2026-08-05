@@ -76,11 +76,11 @@ export function SiteHeader() {
               href={WA_GENERAL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex shrink-0 items-center gap-2 rounded-full bg-primary px-4 py-2.5 text-xs font-semibold text-primary-foreground shadow-soft transition-all duration-300 hover:shadow-lift sm:text-sm"
+              aria-label="Nous écrire sur WhatsApp"
+              className="inline-flex shrink-0 items-center gap-2 rounded-full bg-primary px-3 py-2.5 text-xs font-semibold text-primary-foreground shadow-soft transition-all duration-300 hover:shadow-lift sm:px-4 sm:text-sm"
             >
               <Icon name="whatsapp" className="h-4 w-4" />
               <span className="hidden sm:inline">Nous écrire</span>
-              <span className="sm:hidden">WhatsApp</span>
             </a>
 
             <button
