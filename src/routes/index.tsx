@@ -9,6 +9,7 @@ import { Hero } from "@/components/falah/Hero";
 import { SiteFooter } from "@/components/falah/SiteFooter";
 import { SiteHeader } from "@/components/falah/SiteHeader";
 import { Testimonials } from "@/components/falah/Testimonials";
+import { TrustpilotSection } from "@/components/falah/TrustpilotSection";
 import { Reveal } from "@/components/falah/Reveal";
 import { WhatsAppFab } from "@/components/falah/WhatsAppFab";
 
