@@ -34,6 +34,11 @@ const reviews = [
     title: "G appris très vite ce sont des cours sérieux...",
     text: "G appris très vite ce sont des cours sérieux comme la plus part d'ailleurs et les profs sont très à l'écoute de nos besoin en matière d'apprentissage je recommande les cours Fallah institut. Ce sont des cours très sérieux les profs sont très à l'écoute on va à son rythme et on apprend vite je recommande les cours Fallah institut vivement allez y ss hésiter",
   },
+  {
+    name: "Daifi Nassera",
+    title: "Je prends des cours d arabe depuis...",
+    text: "Je prends des cours d arabe depuis quelques mois je suis ravie de ma nette progression, mon professeur m apporte beaucoup et est surtout patient...\nJe continuerai à prendre des cours chez Falah institut !!!\nL organisation le planning tout me convient !!\nMerci beaucoup",
+  },
 ];
 
 function TrustpilotStars({ className }: { className?: string }) {
@@ -84,7 +89,7 @@ export function TrustpilotSection() {
                 <p className="mt-4 text-sm font-semibold text-foreground">
                   {review.title}
                 </p>
-                <blockquote className="mt-2 flex-1 text-sm leading-relaxed text-foreground/85">
+                <blockquote className="mt-2 flex-1 whitespace-pre-line text-sm leading-relaxed text-foreground/85">
                   “{review.text}”
                 </blockquote>
                 <p className="mt-5 text-sm font-semibold text-primary">
