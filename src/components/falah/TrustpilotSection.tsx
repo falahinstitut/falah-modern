@@ -24,10 +24,6 @@ const reviews = [
     name: "Myriam",
     text: "Mon enseignante est à l'écoute et disponible, j'ai vraiment bien progressé",
   },
-  {
-    name: "Nehla",
-    text: "Un cadre respectueux, sérieux et serein, on apprend en toute quiétude",
-  },
 ];
 
 
