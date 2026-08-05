@@ -1,6 +1,5 @@
 import { WA_GENERAL } from "@/data/falah";
 import logo from "@/assets/logo.jpeg";
-import { TrustpilotReviewCollector } from "./TrustpilotReviewCollector";
 
 const navLinks = [
   { href: "#cursus", label: "Programmes" },
@@ -105,11 +104,7 @@ export function SiteFooter() {
         </div>
       </div>
 
-      <div className="mx-auto mt-12 max-w-7xl border-t border-border pt-8">
-        <TrustpilotReviewCollector />
-      </div>
-
-      <div className="mx-auto mt-8 max-w-7xl border-t border-border pt-6">
+      <div className="mx-auto mt-12 max-w-7xl border-t border-border pt-6">
         <p className="text-xs text-muted-foreground">
           © {new Date().getFullYear()} Falah Institut. Tous droits réservés.
         </p>
