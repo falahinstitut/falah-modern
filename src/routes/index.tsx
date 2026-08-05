@@ -109,6 +109,7 @@ function Index() {
           <FinalCta />
         </Reveal>
       </main>
+      <TrustpilotSection />
       <SiteFooter />
       <WhatsAppFab />
     </div>
