@@ -1,18 +1,8 @@
-import { testimonials, videoTestimonials } from "@/data/falah";
+import { videoTestimonials } from "@/data/falah";
 import { Icon } from "./Icon";
 import { SectionHeading } from "./Primitives";
 import { Reveal } from "./Reveal";
 import { LazyVideo } from "./LazyVideo";
-
-function Stars() {
-  return (
-    <div className="flex gap-0.5 text-gold">
-      {Array.from({ length: 5 }).map((_, i) => (
-        <Icon key={i} name="star" className="h-3.5 w-3.5" filled strokeWidth={1} />
-      ))}
-    </div>
-  );
-}
 
 export function Testimonials() {
   return (
