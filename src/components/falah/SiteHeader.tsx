@@ -41,18 +41,18 @@ export function SiteHeader() {
       <header className={headerClass}>
         <div className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-3.5 sm:px-8">
           {/* Logo + Texte */}
-          <a href="#top" className="flex min-w-0 items-center gap-3">
+          <a href="#top" className="flex min-w-0 items-center gap-2.5 sm:gap-3">
             <img
               src={logo}
               alt="Falah Institut"
-              className="h-10 w-10 shrink-0 rounded-full object-cover"
+              className="h-8 w-8 shrink-0 rounded-full object-cover sm:h-10 sm:w-10"
             />
             <span className="min-w-0">
-              <span className="block truncate font-display text-[0.95rem] font-semibold leading-tight text-primary">
+              <span className="block truncate font-display text-[0.8rem] font-semibold leading-tight text-primary sm:text-[0.95rem]">
                 Falah Institut
               </span>
-              <span className="block truncate text-[0.7rem] tracking-wide text-muted-foreground">
-                Arabe & Coran en ligne
+              <span className="block truncate text-[0.6rem] tracking-wide text-muted-foreground sm:text-[0.7rem]">
+                Arabe et Coran en ligne
               </span>
             </span>
           </a>
