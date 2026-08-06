@@ -25,6 +25,11 @@ const reviews = [
     text: "Organisation flexible, idéal pour une personne qui travaille ou étudie. Les professeurs sont à l'écoute de nos attentes et font leur cours en fonction. J'ai beaucoup appris grâce à l'institut et leur professeur. Je recommande.",
   },
   {
+    name: "Myriam",
+    title: "Très satisfaite !",
+    text: "Je suis vraiment très satisfaite, mon enseignante est à l'écoute, disponible. Elle prend le temps d'expliquer les choses clairement et s'adapte à mon rythme. J'ai vraiment bien progressé grâce à ses cours. Je tiens également à souligner la disponibilité et la réactivité de toute l'équipe de l'institut. Ils sont toujours à l'écoute et répondent rapidement aux demandes. Une très bonne expérience que je recommande sans hésiter !",
+  },
+  {
     name: "Boukhanoufa",
     title: "G appris très vite ce sont des cours sérieux...",
     text: "G appris très vite ce sont des cours sérieux comme la plus part d'ailleurs et les profs sont très à l'écoute de nos besoin en matière d'apprentissage je recommande les cours Fallah institut. Ce sont des cours très sérieux les profs sont très à l'écoute on va à son rythme et on apprend vite je recommande les cours Fallah institut vivement allez y ss hésiter",
