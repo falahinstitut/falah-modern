@@ -15,19 +15,14 @@ const reviews = [
     text: "Super institut, les professeurs sont à votre écoute patients et très gentil et les progrès se font voir rapidement. Je remercie l'équipe et recommande fortement.",
   },
   {
-    name: "Tony",
-    title: "Cours très bien",
-    text: "Cours très bien, très bon suivi 👌",
+    name: "Yaghare Diaby",
+    title: "Très bon institut",
+    text: "Très bon institut, que je recommande sans hésitation. Ils sont très arrangeants concernant les horaires, ce qui est un vrai plus pour moi qui travaille avec des horaires décalés.\n\nJ'ai eu d'excellents professeurs, toujours très patients, pédagogues et bienveillants... et pourtant, je n'étais pas un cas facile. 😅 Al hamdoulilah, aujourd'hui je suis très contente de mes progrès.\n\nJe continue d'ailleurs toujours mon apprentissage avec eux, et je les remercie sincèrement pour leur accompagnement. Qu'Allah les récompense pour tout le bien qu'ils font. BarakAllahu fikoum.",
   },
   {
-    name: "Myriam",
-    title: "Très satisfaite !",
-    text: "Je suis vraiment très satisfaite, mon enseignante est à l'écoute, disponible. Elle prend le temps d'expliquer les choses clairement et s'adapte à mon rythme. J'ai vraiment bien progressé grâce à ses cours. Je tiens également à souligner la disponibilité et la réactivité de toute l'équipe de l'institut. Ils sont toujours à l'écoute et répondent rapidement aux demandes. Une très bonne expérience que je recommande sans hésiter !",
-  },
-  {
-    name: "Kira",
-    title: "tres belle experience prof tres…",
-    text: "tres belle experience prof tres pedagogue formation tres positive",
+    name: "Aïda fgl",
+    title: "Je recommande",
+    text: "Organisation flexible, idéal pour une personne qui travaille ou étudie. Les professeurs sont à l'écoute de nos attentes et font leur cours en fonction. J'ai beaucoup appris grâce à l'institut et leur professeur. Je recommande.",
   },
   {
     name: "Boukhanoufa",
