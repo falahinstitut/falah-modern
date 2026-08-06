@@ -5,11 +5,6 @@ const TRUSTPILOT_URL = "https://www.trustpilot.com/review/falahinstitut.com";
 
 const reviews = [
   {
-    name: "Garba Ousmanou",
-    title: "Je recommande vivement !!",
-    text: "As salam aleykoum wa rahmatuLlah, je fais des cours de langue arabe avec falah institut, cette année nous avons commencé un livre nommé \"Al-arabiyyah-beyna yaddeyk\" j'ai donc commencé par le premier livre A1 puis le second A2. Mon expérience fut très positive j'ai beaucoup progresser au niveau de l'expression orale surtout, mais aussi au niveau de la compréhension orale et écrite. Pour la première quand il y avait pas cours d'arabe exceptionnellement, j'étais un peu déçu tellement que j'aime leur manière d'enseigner et je prends beaucoup de plaisir avec les élèves et l'enseignant.",
-  },
-  {
     name: "Chems Meslem",
     title: "Super institut",
     text: "Super institut, les professeurs sont à votre écoute patients et très gentil et les progrès se font voir rapidement. Je remercie l'équipe et recommande fortement.",
