@@ -190,8 +190,6 @@ export const videoTestimonials = [
   { name: "Abou Bakr", label: "Élève en langue arabe", id: "47el6QInoyw" },
   { name: "Mohamed", label: "Élève en langue arabe", id: "kcSCMGFJxWM" },
   { name: "Mohamed", label: "Élève en cours de Coran", id: "t8hU8hcvHuY" },
-  { name: "Nassera", label: "Élève en langue arabe", id: "e6HG5-jM9xI" },
-  { name: "Chemseddine", label: "Élève", id: "inPe0hY8s2E" },
 ];
 
 export const faq = [
