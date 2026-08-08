@@ -88,8 +88,10 @@ function Index() {
       <FloatingLetters />
       <SiteHeader />
       <main>
-
         <Hero />
+        <Reveal>
+          <Testimonials />
+        </Reveal>
         <Reveal>
           <Advantages />
         </Reveal>
@@ -100,13 +102,10 @@ function Index() {
           <Formats />
         </Reveal>
         <Reveal>
-          <Testimonials />
+          <Faq />
         </Reveal>
         <Reveal>
           <TrustpilotSection />
-        </Reveal>
-        <Reveal>
-          <Faq />
         </Reveal>
         <Reveal>
           <FinalCta />

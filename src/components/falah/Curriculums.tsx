@@ -1,4 +1,4 @@
-import { WA_LEVEL_TEST, curriculums } from "@/data/falah";
+import { WA_ADVICE, curriculums } from "@/data/falah";
 import { Icon } from "./Icon";
 import { SectionHeading, WhatsAppButton } from "./Primitives";
 
@@ -9,8 +9,9 @@ export function Curriculums() {
         <SectionHeading
           eyebrow="Programmes"
           title="Nos 3 cursus, expliqués"
-          subtitle="Découvrez le contenu précis de chaque cursus pour choisir celui qui correspond à votre objectif."
+          subtitle="Imaginez lire le Coran couramment, sans hésiter sur chaque mot — c'est ce que nos élèves vivent après quelques mois d'accompagnement. Découvrez le contenu précis de chaque cursus pour choisir celui qui correspond à votre objectif."
         />
+
 
         <div className="mt-14 grid gap-5 lg:grid-cols-3">
           {curriculums.map((c) => (
@@ -88,12 +89,12 @@ export function Curriculums() {
               Vous hésitez sur le cursus qui vous correspond ?
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
-              Rendez-vous individuel sans engagement pour définir votre cursus
-              idéal avec un enseignant.
+              Échangeons simplement sur vos objectifs : nous vous orientons vers
+              le cursus le plus adapté, sans engagement.
             </p>
           </div>
-          <WhatsAppButton href={WA_LEVEL_TEST} className="shrink-0">
-            Évaluer mon niveau — 15 min
+          <WhatsAppButton href={WA_ADVICE} className="shrink-0">
+            Être conseillé(e) sur WhatsApp
           </WhatsAppButton>
         </div>
       </div>

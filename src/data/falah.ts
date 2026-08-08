@@ -8,8 +8,8 @@ export const WA_GENERAL = waLink(
   "Salam alaykoum, je souhaite avoir plus d'informations sur vos cours.",
 );
 
-export const WA_LEVEL_TEST = waLink(
-  "Salam alaykoum, je souhaiterais faire évaluer mon niveau gratuit (15 min) pour définir le cursus qui me convient.",
+export const WA_ADVICE = waLink(
+  "Salam alaykoum, je souhaiterais être conseillé(e) pour choisir le cursus qui me convient.",
 );
 
 export const highlights = [
@@ -198,6 +198,10 @@ export const faq = [
   {
     q: "Je n'ai aucun niveau en arabe, puis-je m'inscrire ?",
     a: "Bien sûr ! Nos formules s'adaptent à tous les niveaux, du débutant complet à l'élève confirmé. Un premier échange sur WhatsApp permet de définir le point de départ le plus adapté.",
+  },
+  {
+    q: "Est-il trop tard pour commencer à l'âge adulte ?",
+    a: "Beaucoup pensent qu'il est trop tard pour apprendre l'arabe ou le Coran adulte, mais la majorité de nos élèves ont commencé ainsi. Avec un rythme régulier et un enseignant qui s'adapte à vous, les progrès viennent sereinement.",
   },
   {
     q: "Comment se déroulent les cours ?",
