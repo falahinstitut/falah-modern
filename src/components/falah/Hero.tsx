@@ -1,4 +1,4 @@
-import { WA_GENERAL, WA_LEVEL_TEST, highlights } from "@/data/falah";
+import { WA_GENERAL, highlights } from "@/data/falah";
 import heroPattern from "@/assets/hero-pattern.jpg";
 import { Icon } from "./Icon";
 import { WhatsAppButton } from "./Primitives";
@@ -29,17 +29,22 @@ export function Hero() {
             1 ère séance à 1 €, pour découvrir nos cours avant de vous engager.
           </p>
 
-          <h1 className="mt-6 text-[2.6rem] font-semibold leading-[1.03] text-primary sm:text-6xl lg:text-[4.25rem]">
-            Apprenez l'
-            <span className="italic text-gold">Arabe</span>
-            <br />et le <span className="italic text-gold">Coran</span> en
-            ligne
+          <h1 className="mt-6 text-[2.1rem] font-semibold leading-[1.08] text-primary sm:text-5xl lg:text-[3.4rem]">
+            Vous repoussez l'apprentissage de l'
+            <span className="italic text-gold">Arabe</span> et du{" "}
+            <span className="italic text-gold">Coran</span> depuis trop
+            longtemps ?
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
             Des cours pour les hommes, les femmes et les enfants, en petit
             groupe ou individuels, avec des enseignants qualifiés et
             bienveillants. Depuis chez vous, à votre rythme, dès aujourd'hui.
+          </p>
+
+          <p className="mt-4 max-w-xl text-sm leading-relaxed text-foreground/75 sm:text-base">
+            Beaucoup pensent qu'il est trop tard pour apprendre l'arabe ou le
+            Coran adulte, mais la majorité de nos élèves ont commencé ainsi.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -79,20 +84,6 @@ export function Hero() {
             />
           </div>
 
-          <a
-            href={WA_LEVEL_TEST}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="surface-card mt-4 flex items-center justify-between gap-4 p-4 lg:absolute lg:-left-8 lg:top-10 lg:mt-0 lg:w-64 lg:flex-col lg:items-start"
-          >
-            <div className="min-w-0">
-              <p className="eyebrow">Gratuit — 15 min</p>
-              <p className="mt-1 font-display text-sm font-semibold leading-snug text-primary">
-                Évaluer mon niveau avec un enseignant
-              </p>
-            </div>
-            <Icon name="arrow" className="h-5 w-5 shrink-0 text-gold" />
-          </a>
         </div>
       </div>
     </section>
