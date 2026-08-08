@@ -42,10 +42,6 @@ export function Hero() {
             bienveillants. Depuis chez vous, à votre rythme, dès aujourd'hui.
           </p>
 
-          <p className="mt-4 max-w-xl text-sm leading-relaxed text-foreground/75 sm:text-base">
-            Beaucoup pensent qu'il est trop tard pour apprendre l'arabe ou le
-            Coran adulte, mais la majorité de nos élèves ont commencé ainsi.
-          </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
             <WhatsAppButton href={WA_GENERAL}>
