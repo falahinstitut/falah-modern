@@ -49,7 +49,7 @@ function PolitiqueConfidentialite() {
                 Nous collectons uniquement les données que vous nous transmettez
                 volontairement : nom, prénom, numéro de téléphone, adresse
                 e-mail et niveau en arabe. Ces données nous servent à vous
-                recontacter, à organiser votre évaluation de niveau et à gérer
+                recontacter, à organiser vos cours et à gérer
                 votre inscription.
               </p>
             </section>
