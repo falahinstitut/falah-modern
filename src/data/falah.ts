@@ -139,10 +139,6 @@ export const faq = [
     a: "Tous les cours ont lieu en ligne via Zoom, en direct avec votre enseignant(e). Vous recevez le lien de connexion avant chaque séance, et pouvez suivre les cours depuis chez vous, où que vous soyez.",
   },
   {
-    q: "Puis-je changer de formule en cours de route ?",
-    a: "Oui, il est tout à fait possible de passer d'un cours collectif à un cours individuel (ou inversement) selon votre progression et vos disponibilités. Il suffit d'en discuter avec nous sur WhatsApp.",
-  },
-  {
     q: "Les cours sont-ils adaptés aux enfants ?",
     a: "Oui, nous proposons des cours pour les femmes, les enfants et les hommes, avec une pédagogie adaptée à chaque public.",
   },

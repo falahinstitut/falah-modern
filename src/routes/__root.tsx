@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Cours d'arabe et de Coran en ligne via Zoom, en petit groupe ou individuels, pour hommes, femmes et enfants.",
+          "Cours d'arabe et de Coran en ligne via Zoom, en petit groupe, pour hommes, femmes et enfants.",
       },
       { name: "author", content: "Falah Institut" },
       {
@@ -91,7 +91,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         property: "og:description",
         content:
-          "Cours d'arabe et de Coran en ligne via Zoom, en petit groupe ou individuels, pour hommes, femmes et enfants.",
+          "Cours d'arabe et de Coran en ligne via Zoom, en petit groupe, pour hommes, femmes et enfants.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
