@@ -14,7 +14,7 @@ import { WhatsAppFab } from "@/components/falah/WhatsAppFab";
 
 const TITLE = "Falah Institut — Cours d'arabe et de Coran en ligne";
 const DESCRIPTION =
-  "Cours d'arabe et de Coran en ligne via Zoom pour hommes, femmes et enfants : cursus débutant, langue arabe et mémorisation, en groupe ou individuel, 7j/7 de 9h à 21h.";
+  "Cours d'arabe et de Coran en ligne via Zoom pour hommes, femmes et enfants : cursus débutant, langue arabe et mémorisation en petit groupe, 7j/7 de 9h à 21h.";
 
 const SCHEMA = {
   "@context": "https://schema.org",
@@ -35,14 +35,6 @@ const SCHEMA = {
           "@type": "Course",
           name: "Cours collectif d’arabe et de Coran",
           description: "Cours en petit groupe, 2h/semaine, groupes non mixtes.",
-        },
-      },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Course",
-          name: "Cours individuel d’arabe et de Coran",
-          description: "Cours privés 1h ou 2h/semaine, horaires flexibles.",
         },
       },
     ],

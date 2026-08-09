@@ -27,11 +27,6 @@ export function Hero() {
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-16 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 lg:pb-24">
         <div className="min-w-0">
-          <p className="max-w-md text-sm font-semibold leading-snug text-gold sm:text-base">
-            Une première séance pour découvrir nos cours avant de vous engager.
-          </p>
-
-
           <h1 className="mt-6 text-[2.1rem] font-semibold leading-[1.08] text-primary sm:text-5xl lg:text-[3.4rem]">
             Vous repoussez l'<span className="italic text-gold">arabe</span> et
             le <span className="italic text-gold">Coran</span> depuis trop
@@ -39,9 +34,8 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Des cours pour les hommes, les femmes et les enfants, en petit
-            groupe ou individuels, avec des enseignants qualifiés et
-            bienveillants. Depuis chez vous, à votre rythme, dès aujourd'hui.
+            Des cours en petit groupe pour les hommes, les femmes et les
+            enfants, avec des enseignants qualifiés et bienveillants. Depuis chez vous, à votre rythme, dès aujourd'hui.
           </p>
 
 

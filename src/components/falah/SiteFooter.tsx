@@ -35,8 +35,7 @@ export function SiteFooter() {
             </div>
           </div>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-            Apprenez l’arabe et le Coran en ligne, en petit groupe ou en cours
-            individuels, avec des enseignants qualifiés et bienveillants.
+            Apprenez l’arabe et le Coran en ligne, en petit groupe, avec des enseignants qualifiés et bienveillants.
           </p>
         </div>
 
