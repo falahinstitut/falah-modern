@@ -1,5 +1,5 @@
 import { WA_GENERAL, highlights } from "@/data/falah";
-import heroPattern from "@/assets/hero-pattern.jpg";
+
 import { Icon } from "./Icon";
 import { WhatsAppButton } from "./Primitives";
 import { LazyVideo } from "./LazyVideo";
