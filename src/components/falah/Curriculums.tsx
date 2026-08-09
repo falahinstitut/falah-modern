@@ -1,6 +1,6 @@
-import { WA_ADVICE, curriculums } from "@/data/falah";
+import { curriculums } from "@/data/falah";
 import { Icon } from "./Icon";
-import { SectionHeading, WhatsAppButton } from "./Primitives";
+import { SectionHeading } from "./Primitives";
 
 export function Curriculums() {
   return (
@@ -81,21 +81,6 @@ export function Curriculums() {
               ) : null}
             </article>
           ))}
-        </div>
-
-        <div className="surface-card mt-8 flex flex-col gap-6 p-8 sm:p-10 lg:flex-row lg:items-center lg:justify-between">
-          <div className="min-w-0 max-w-xl">
-            <h3 className="text-2xl font-semibold leading-tight text-primary sm:text-3xl">
-              Vous hésitez sur le cursus qui vous correspond ?
-            </h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
-              Échangeons simplement sur vos objectifs : nous vous orientons vers
-              le cursus le plus adapté, sans engagement.
-            </p>
-          </div>
-          <WhatsAppButton href={WA_ADVICE} className="shrink-0">
-            Être conseillé(e) sur WhatsApp
-          </WhatsAppButton>
         </div>
       </div>
     </section>
