@@ -1,6 +1,6 @@
-import { WA_ADVICE, curriculums } from "@/data/falah";
+import { curriculums } from "@/data/falah";
 import { Icon } from "./Icon";
-import { SectionHeading, WhatsAppButton } from "./Primitives";
+import { SectionHeading } from "./Primitives";
 
 export function Curriculums() {
   return (
