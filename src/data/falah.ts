@@ -94,7 +94,6 @@ export const curriculums = [
 export type Format = {
   kind: "Cours collectif" | "Individuel";
   name: string;
-  price: string;
   promo: string;
   tagline: string;
   features: string[];
@@ -105,8 +104,7 @@ export type Format = {
 export const collectiveFormat: Format = {
   kind: "Cours collectif",
   name: "En groupe",
-  price: "35€",
-  promo: "1 ère séance à 1 €, pour découvrir nos cours avant de vous engager",
+  promo: "Première séance découverte avant de vous engager",
   tagline:
     "Apprenez en communauté dans une ambiance motivante et bienveillante.",
   features: [
@@ -124,8 +122,7 @@ export const individualFormats: Format[] = [
   {
     kind: "Individuel",
     name: "Individuel",
-    price: "40€",
-    promo: "1 ère séance à 1 €, pour découvrir nos cours avant de vous engager",
+    promo: "Première séance découverte avant de vous engager",
     tagline: "Un apprentissage sur mesure",
     features: [
       "Cours 1h/semaine",
@@ -141,8 +138,7 @@ export const individualFormats: Format[] = [
   {
     kind: "Individuel",
     name: "Individuel Plus",
-    price: "70€",
-    promo: "1 ère séance à 1 €, pour découvrir nos cours avant de vous engager",
+    promo: "Première séance découverte avant de vous engager",
     tagline: "Un apprentissage sur mesure",
     featured: true,
     features: [
@@ -222,7 +218,7 @@ export const faq = [
     a: "Rien de plus simple : contactez-nous directement sur WhatsApp en cliquant sur un bouton d'inscription. Nous échangeons ensemble sur vos objectifs et vous accompagnons pour démarrer rapidement.",
   },
   {
-    q: "Le paiement est-il mensuel et sans engagement ?",
-    a: "Oui, nos formules fonctionnent sur un abonnement mensuel, sans engagement de durée. Vous restez libre d'ajuster votre formule à tout moment.",
+    q: "Y a-t-il un engagement de durée ?",
+    a: "Non, nos formules sont sans engagement de durée. Vous restez libre d'ajuster votre formule à tout moment, il suffit de nous en informer sur WhatsApp.",
   },
 ];
