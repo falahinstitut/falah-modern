@@ -44,11 +44,7 @@ export function Hero() {
             bienveillants. Depuis chez vous, à votre rythme, dès aujourd'hui.
           </p>
 
-          <div className="mt-8 mx-auto w-full max-w-[19rem] sm:max-w-[21rem]">
-            <div className="relative aspect-[9/16] overflow-hidden rounded-[1.75rem] border border-gold/50 bg-primary/5 shadow-card ring-1 ring-primary/10">
-              <LazyVideo id="qF54f6sBMEQ" title="Présentation de Falah Institut" />
-            </div>
-          </div>
+
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
 
@@ -77,18 +73,13 @@ export function Hero() {
         </div>
 
         <div className="relative min-w-0">
-          <div className="relative overflow-hidden rounded-[2rem] border border-border shadow-card">
-            <img
-              src={heroPattern}
-              alt="Motif géométrique islamique abstrait en bleu marine, or et vert émeraude"
-              className="h-[22rem] w-full object-cover sm:h-[30rem] lg:h-[34rem]"
-              width={1200}
-              height={800}
-              loading="eager"
-            />
+          <div className="mx-auto w-full max-w-[20rem] sm:max-w-[22rem]">
+            <div className="relative aspect-[9/16] overflow-hidden rounded-[2rem] border border-gold/50 bg-primary/5 shadow-card ring-1 ring-primary/10">
+              <LazyVideo id="qF54f6sBMEQ" title="Présentation de Falah Institut" />
+            </div>
           </div>
-
         </div>
+
       </div>
     </section>
   );
