@@ -32,9 +32,8 @@ export function Hero() {
           </p>
 
           <h1 className="mt-6 text-[2.1rem] font-semibold leading-[1.08] text-primary sm:text-5xl lg:text-[3.4rem]">
-            Vous repoussez l'apprentissage de l'
-            <span className="italic text-gold">Arabe</span> et du{" "}
-            <span className="italic text-gold">Coran</span> depuis trop
+            Vous repoussez l'<span className="italic text-gold">arabe</span> et
+            le <span className="italic text-gold">Coran</span> depuis trop
             longtemps ?
           </h1>
 
