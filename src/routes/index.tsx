@@ -4,7 +4,6 @@ import { Curriculums } from "@/components/falah/Curriculums";
 import { Faq } from "@/components/falah/Faq";
 
 import { FinalCta } from "@/components/falah/FinalCta";
-import { Formats } from "@/components/falah/Formats";
 import { Hero } from "@/components/falah/Hero";
 import { SiteFooter } from "@/components/falah/SiteFooter";
 import { SiteHeader } from "@/components/falah/SiteHeader";
@@ -97,9 +96,6 @@ function Index() {
         </Reveal>
         <Reveal>
           <Curriculums />
-        </Reveal>
-        <Reveal>
-          <Formats />
         </Reveal>
         <Reveal>
           <Faq />
