@@ -91,69 +91,6 @@ export const curriculums = [
   },
 ];
 
-export type Format = {
-  kind: "Cours collectif" | "Individuel";
-  name: string;
-  promo: string;
-  tagline: string;
-  features: string[];
-  featured?: boolean;
-  wa: string;
-};
-
-export const collectiveFormat: Format = {
-  kind: "Cours collectif",
-  name: "En groupe",
-  promo: "Première séance découverte avant de vous engager",
-  tagline:
-    "Apprenez en communauté dans une ambiance motivante et bienveillante.",
-  features: [
-    "Cours 2h/semaine sur créneaux fixes",
-    "Groupe de 6 élèves maximum",
-    "Cours en ligne via Zoom",
-    "Groupes non mixtes (hommes, femmes, enfants)",
-  ],
-  wa: waLink(
-    "Salam alaykoum, je suis intéressé(e) par la formule Collectif. Pouvez-vous me donner plus d'informations ?",
-  ),
-};
-
-export const individualFormats: Format[] = [
-  {
-    kind: "Individuel",
-    name: "Individuel",
-    promo: "Première séance découverte avant de vous engager",
-    tagline: "Un apprentissage sur mesure",
-    features: [
-      "Cours 1h/semaine",
-      "Cours privés adaptés à vos objectifs",
-      "Flexibilité totale : choisissez vos horaires",
-      "Cours en ligne via Zoom",
-      "Du lundi au dimanche, de 9h à 21h",
-    ],
-    wa: waLink(
-      "Salam alaykoum, je suis intéressé(e) par la formule Individuel. Pouvez-vous me donner plus d'informations ?",
-    ),
-  },
-  {
-    kind: "Individuel",
-    name: "Individuel Plus",
-    promo: "Première séance découverte avant de vous engager",
-    tagline: "Un apprentissage sur mesure",
-    featured: true,
-    features: [
-      "Cours 2h/semaine",
-      "Cours privés adaptés à vos objectifs",
-      "Flexibilité totale : choisissez vos horaires",
-      "Cours en ligne via Zoom",
-      "Du lundi au dimanche, de 9h à 21h",
-    ],
-    wa: waLink(
-      "Salam alaykoum, je suis intéressé(e) par la formule Individuel Plus. Pouvez-vous me donner plus d'informations ?",
-    ),
-  },
-];
-
 export const testimonials = [
   {
     name: "Nehla",
