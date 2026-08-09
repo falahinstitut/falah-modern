@@ -2,6 +2,8 @@ import { WA_GENERAL, highlights } from "@/data/falah";
 import heroPattern from "@/assets/hero-pattern.jpg";
 import { Icon } from "./Icon";
 import { WhatsAppButton } from "./Primitives";
+import { LazyVideo } from "./LazyVideo";
+
 
 
 export function Hero() {
@@ -42,8 +44,14 @@ export function Hero() {
             bienveillants. Depuis chez vous, à votre rythme, dès aujourd'hui.
           </p>
 
+          <div className="mt-8 mx-auto w-full max-w-[19rem] sm:max-w-[21rem]">
+            <div className="relative aspect-[9/16] overflow-hidden rounded-[1.75rem] border border-gold/50 bg-primary/5 shadow-card ring-1 ring-primary/10">
+              <LazyVideo id="qF54f6sBMEQ" title="Présentation de Falah Institut" />
+            </div>
+          </div>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+
             <WhatsAppButton href={WA_GENERAL}>
               Démarrer sur WhatsApp
             </WhatsAppButton>
