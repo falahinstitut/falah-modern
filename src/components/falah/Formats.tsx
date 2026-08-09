@@ -31,14 +31,9 @@ function FormatCard({ format }: { format: Format }) {
       <h3 className="mt-6 text-xl font-semibold text-primary">{format.name}</h3>
       <p className="mt-1.5 text-sm text-muted-foreground">{format.tagline}</p>
 
-      <div className="mt-6 flex items-end gap-1.5">
-        <span className="font-display text-4xl font-semibold text-primary">
-          {format.price}
-        </span>
-        <span className="pb-1 text-sm text-muted-foreground">/ mois</span>
-      </div>
-      <p className="mt-2 text-sm font-semibold text-emerald">{format.promo}</p>
+      <p className="mt-6 text-sm font-semibold text-emerald">{format.promo}</p>
       <p className="mt-1 text-xs text-muted-foreground">Sans engagement</p>
+
 
       <ul className="mt-6 space-y-2.5 border-t border-border pt-6">
         {format.features.map((f) => (
@@ -77,7 +72,7 @@ export function Formats() {
       <div className="pointer-events-none absolute inset-0 grid-veil opacity-50" />
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading
-          eyebrow="Tarifs"
+          eyebrow="Formats"
           title="Choisissez votre format de cours"
           subtitle="Quel que soit le programme choisi ci-dessus (Fondations, Langue Arabe ou Mémorisation), il est disponible dans l'un de ces 3 formats."
         />

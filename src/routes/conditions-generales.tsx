@@ -54,15 +54,16 @@ function ConditionsGenerales() {
 
             <section>
               <h2 className="text-lg font-semibold text-primary">
-                Tarifs et paiement
+                Modalités financières
               </h2>
               <p className="mt-2">
-                Les tarifs en vigueur sont ceux affichés sur le site au moment de
-                l’inscription. Le paiement s’effectue mensuellement, en début de
-                mois. L’offre « 1 ère séance à 1 €, pour découvrir nos cours avant
-                de vous engager » s’applique à la première séance uniquement.
+                Les conditions financières sont communiquées individuellement
+                lors de l’échange d’inscription sur WhatsApp, puis confirmées
+                avant le début des cours. Une première séance découverte est
+                proposée avant tout engagement.
               </p>
             </section>
+
 
             <section>
               <h2 className="text-lg font-semibold text-primary">

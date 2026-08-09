@@ -3,7 +3,7 @@ import logo from "@/assets/logo.jpeg";
 
 const navLinks = [
   { href: "#cursus", label: "Programmes" },
-  { href: "#formats", label: "Tarifs" },
+  { href: "#formats", label: "Formats" },
   { href: "#avis", label: "Témoignages" },
   { href: "#faq", label: "FAQ" },
 ];

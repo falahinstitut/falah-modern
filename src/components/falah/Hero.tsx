@@ -28,8 +28,9 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-16 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 lg:pb-24">
         <div className="min-w-0">
           <p className="max-w-md text-sm font-semibold leading-snug text-gold sm:text-base">
-            1 ère séance à 1 €, pour découvrir nos cours avant de vous engager.
+            Une première séance pour découvrir nos cours avant de vous engager.
           </p>
+
 
           <h1 className="mt-6 text-[2.1rem] font-semibold leading-[1.08] text-primary sm:text-5xl lg:text-[3.4rem]">
             Vous repoussez l'<span className="italic text-gold">arabe</span> et
