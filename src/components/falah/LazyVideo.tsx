@@ -24,11 +24,15 @@ export function LazyVideo({ id, title }: { id: string; title: string }) {
       className="group relative h-full w-full overflow-hidden bg-secondary"
     >
       <img
-        src={`https://i.ytimg.com/vi/${id}/maxresdefault.jpg`}
+        src={`https://i.ytimg.com/vi/${id}/oardefault.jpg`}
         onError={(e) => {
           const img = e.currentTarget;
-          if (!img.dataset['fallback']) {
+          const step = img.dataset['fallback'];
+          if (!step) {
             img.dataset['fallback'] = "1";
+            img.src = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
+          } else if (step === "1") {
+            img.dataset['fallback'] = "2";
             img.src = `https://i.ytimg.com/vi/${id}/sddefault.jpg`;
           }
         }}
