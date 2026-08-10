@@ -27,7 +27,7 @@ export function FinalCta() {
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-primary-foreground/70 sm:text-base">
             Rejoignez nos élèves et progressez dans une ambiance sérieuse et
-            bienveillante. Un simple message suffit pour démarrer.
+            studieuse. Un simple message suffit pour démarrer.
           </p>
           <a
             href={WA_GENERAL}
