@@ -35,7 +35,7 @@ export function Hero() {
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
             Des cours en petit groupe pour les hommes, les femmes et les
-            enfants, avec des enseignants qualifiés et bienveillants. Depuis chez vous, à votre rythme, dès aujourd'hui.
+            enfants, avec des enseignants qualifiés. Depuis chez vous, à votre rythme, dès aujourd'hui.
           </p>
 
 
