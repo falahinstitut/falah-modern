@@ -4,6 +4,7 @@ type IconName =
   | "clock"
   | "chat"
   | "whatsapp"
+  | "phone"
   | "check"
   | "star"
   | "arrow"
@@ -13,6 +14,7 @@ type IconName =
   | "plus"
   | "menu"
   | "close";
+
 
 const paths: Record<IconName, React.ReactNode> = {
   cap: (

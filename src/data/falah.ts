@@ -8,6 +8,10 @@ export const WA_GENERAL = waLink(
   "Salam alaykoum, je souhaite avoir plus d'informations sur vos cours.",
 );
 
+export const CALENDLY_CALL =
+  "https://calendly.com/contact-falahinstitut/appel-decouverte-falah-institut";
+
+
 
 export const highlights = [
   "Avis vérifiés d'élèves",
