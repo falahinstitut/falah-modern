@@ -15,28 +15,6 @@ export const highlights = [
   "Enseignement authentique",
 ];
 
-export const advantages = [
-  {
-    icon: "cap" as const,
-    title: "Enseignants qualifiés",
-    text: "Des professeurs sérieux, patients et pédagogues, sélectionnés pour la qualité de leur enseignement.",
-  },
-  {
-    icon: "target" as const,
-    title: "Suivi personnalisé",
-    text: "Chaque élève progresse à son rythme, avec un accompagnement adapté à son niveau et ses objectifs.",
-  },
-  {
-    icon: "clock" as const,
-    title: "Horaires flexibles",
-    text: "Cours disponibles 7j/7 de 9h à 21h, pour s'organiser facilement autour de votre emploi du temps.",
-  },
-  {
-    icon: "chat" as const,
-    title: "Contact direct",
-    text: "Une équipe réactive et disponible sur WhatsApp pour répondre à toutes vos questions.",
-  },
-];
 
 
 export const testimonials = [
