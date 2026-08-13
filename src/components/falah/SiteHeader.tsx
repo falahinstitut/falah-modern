@@ -73,15 +73,16 @@ export function SiteHeader() {
             </nav>
 
             <a
-              href={WA_GENERAL}
+              href={CALENDLY_CALL}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Nous écrire sur WhatsApp"
+              aria-label="Réserver un appel gratuit avec Falah Institut"
               className="inline-flex shrink-0 items-center gap-2 rounded-full bg-primary px-3 py-2.5 text-xs font-semibold text-primary-foreground shadow-soft transition-all duration-300 hover:shadow-lift sm:px-4 sm:text-sm"
             >
-              <Icon name="whatsapp" className="h-4 w-4" />
-              <span className="hidden sm:inline">Nous écrire</span>
+              <Icon name="phone" className="h-4 w-4" />
+              <span className="hidden sm:inline">Réservez un appel gratuit</span>
             </a>
+
 
             <button
               type="button"
@@ -126,15 +127,16 @@ export function SiteHeader() {
           ))}
           <hr className="my-2 border-border" />
           <a
-            href={WA_GENERAL}
+            href={CALENDLY_CALL}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setMobileOpen(false)}
             className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground"
           >
-            <Icon name="whatsapp" className="h-4 w-4" />
-            Nous écrire sur WhatsApp
+            <Icon name="phone" className="h-4 w-4" />
+            Réservez un appel gratuit
           </a>
+
         </nav>
       </div>
     </>
