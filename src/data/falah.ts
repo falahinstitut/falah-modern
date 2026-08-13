@@ -121,6 +121,7 @@ export const testimonials = [
 
 export const videoTestimonials = [
   { name: "Mohamed", label: "Élève en cours de Coran", id: "t8hU8hcvHuY" },
+  { name: "Chemseddine", label: "Élève en cours de Coran", id: "inPe0hY8s2E" },
 ];
 
 
