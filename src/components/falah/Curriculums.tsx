@@ -1,114 +1,57 @@
-import { curriculums } from "@/data/falah";
 import { Icon } from "./Icon";
 import { SectionHeading } from "./Primitives";
 
-export function Curriculums() {
-  const main = curriculums.filter((c) => !c.secondary);
-  const secondary = curriculums.find((c) => c.secondary);
+const parcoursItems = [
+  {
+    icon: "clock" as const,
+    label: "Durée",
+    text: "4 mois",
+  },
+  {
+    icon: "users" as const,
+    label: "Format",
+    text: "2 séances de groupe (1h30) + 1 séance individuelle (30 min) par semaine",
+  },
+  {
+    icon: "target" as const,
+    label: "À qui ça s'adresse",
+    text: "Du débutant complet jusqu'à la lecture fluide et autonome avec les règles fondamentales du Tajwid",
+  },
+  {
+    icon: "cap" as const,
+    label: "Ce que nous enseignons",
+    text: "Les lettres arabes (reconnaissance, écriture, bonne prononciation), la lecture fluide, les règles fondamentales du Tajwid, avec un suivi personnalisé",
+  },
+];
 
+export function Curriculums() {
   return (
     <section id="cursus" className="relative scroll-mt-24 py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading
-          eyebrow="Programmes"
+          eyebrow="Programme"
           title="Notre parcours"
-          subtitle="Un chemin clair pour passer de la découverte des lettres à la maîtrise du Coran et du Tajwid."
+          subtitle="Un parcours unique de 4 mois pour apprendre à lire le Coran avec confiance et maîtriser les bases du Tajwid."
         />
 
-        <div className="mt-14 grid gap-5 lg:grid-cols-2">
-          {main.map((c) => (
+        <div className="mt-14 grid gap-5 sm:grid-cols-2">
+          {parcoursItems.map((item) => (
             <article
-              key={c.title}
+              key={item.label}
               className="surface-card flex flex-col p-7 sm:p-8"
             >
-              <div className="flex items-start justify-between gap-4">
-                <div className="min-w-0">
-                  <h3 className="text-2xl font-semibold text-primary">
-                    {c.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-snug text-muted-foreground">
-                    {c.subtitle}
-                  </p>
-                </div>
-                <span className="font-display text-3xl font-semibold text-gold/45">
-                  {c.number}
-                </span>
-              </div>
-
-              <dl className="mt-7 space-y-4 border-t border-border pt-6">
-                <div>
-                  <dt className="eyebrow">À qui ça s'adresse</dt>
-                  <dd className="mt-1.5 text-sm leading-relaxed text-foreground/80">
-                    {c.audience}
-                  </dd>
-                </div>
-                <div>
-                  <dt className="eyebrow">L'objectif</dt>
-                  <dd className="mt-1.5 text-sm leading-relaxed text-foreground/80">
-                    {c.goal}
-                  </dd>
-                </div>
-                {c.duration ? (
-                  <div>
-                    <dt className="eyebrow">Durée</dt>
-                    <dd className="mt-1.5 text-sm leading-relaxed text-foreground/80">
-                      {c.duration}
-                    </dd>
-                  </div>
-                ) : null}
-              </dl>
-
-              <p className="mt-7 text-sm font-semibold text-primary">
-                Ce que l'élève maîtrise à la fin du cursus
+              <span className="grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary">
+                <Icon name={item.icon} className="h-6 w-6" />
+              </span>
+              <h3 className="mt-6 text-sm font-semibold uppercase tracking-wide text-gold">
+                {item.label}
+              </h3>
+              <p className="mt-3 text-base font-medium leading-relaxed text-foreground">
+                {item.text}
               </p>
-              <ul className="mt-3 space-y-2.5">
-                {c.outcomes.map((o) => (
-                  <li key={o} className="flex min-w-0 gap-2.5">
-                    <Icon
-                      name="check"
-                      className="mt-0.5 h-4 w-4 shrink-0 text-emerald"
-                    />
-                    <span className="min-w-0 text-sm leading-relaxed text-muted-foreground">
-                      {o}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-
-              {c.included ? (
-                <p className="mt-6 rounded-xl bg-secondary p-4 text-xs leading-relaxed text-foreground/75">
-                  <span className="font-semibold text-primary">Inclus : </span>
-                  {c.included}
-                </p>
-              ) : null}
             </article>
           ))}
         </div>
-
-        {secondary ? (
-          <div className="mt-5">
-            <article className="surface-card flex flex-col gap-5 p-6 sm:flex-row sm:items-center sm:justify-between">
-              <div className="min-w-0 sm:max-w-sm">
-                <div className="flex items-center gap-3">
-                  <span className="font-display text-2xl font-semibold text-gold/45">
-                    {secondary.number}
-                  </span>
-                  <h3 className="text-lg font-semibold text-primary">
-                    {secondary.title}
-                  </h3>
-                </div>
-                <p className="mt-1 text-sm text-muted-foreground">
-                  {secondary.subtitle}
-                </p>
-              </div>
-              <p className="max-w-xl text-sm leading-relaxed text-foreground/80">
-                {secondary.audience} Option complémentaire pour les élèves qui
-                souhaitent approfondir la langue arabe après avoir acquis une
-                bonne base de lecture.
-              </p>
-            </article>
-          </div>
-        ) : null}
       </div>
     </section>
   );
