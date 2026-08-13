@@ -14,6 +14,16 @@ const reviews = [
     title: "Très satisfaite !",
     text: "Je suis vraiment très satisfaite, mon enseignante est à l'écoute, disponible. Elle prend le temps d'expliquer les choses clairement et s'adapte à mon rythme. J'ai vraiment bien progressé grâce à ses cours. Je tiens également à souligner la disponibilité et la réactivité de toute l'équipe de l'institut. Ils sont toujours à l'écoute et répondent rapidement aux demandes. Une très bonne expérience que je recommande sans hésiter !",
   },
+  {
+    name: "Khadija",
+    title: "Super expérience dans ce centre",
+    text: "Super expérience dans ce centre. Des professeurs vraiment très professionnels et avec des méthodes d’apprentissage très simple et rapide. Je recommande vivement.",
+  },
+  {
+    name: "Lila Lila",
+    title: "Cursus de Coran",
+    text: "salam aleykom.\n\nJ'ai suivi le cursus de Coran, el hamdoulilah très bonne expérience. J'ai pu travailler la lecture du Coran en appliquant les règles de Tajwid, réviser mes sourates apprises et faire un peu de tafsir.\n\nLes enseignantes sont pédagogues, patientes, el hamdoulilah.",
+  },
 ];
 
 
