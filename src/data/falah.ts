@@ -120,10 +120,9 @@ export const testimonials = [
 ];
 
 export const videoTestimonials = [
-  { name: "Abou Bakr", label: "Élève en langue arabe", id: "47el6QInoyw" },
-  { name: "Mohamed", label: "Élève en langue arabe", id: "kcSCMGFJxWM" },
   { name: "Mohamed", label: "Élève en cours de Coran", id: "t8hU8hcvHuY" },
 ];
+
 
 export const faq = [
   {
