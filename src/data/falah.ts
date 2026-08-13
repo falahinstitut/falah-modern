@@ -8,9 +8,6 @@ export const WA_GENERAL = waLink(
   "Salam alaykoum, je souhaite avoir plus d'informations sur vos cours.",
 );
 
-export const WA_ADVICE = waLink(
-  "Salam alaykoum, je souhaiterais être conseillé(e) pour choisir le cursus qui me convient.",
-);
 
 export const highlights = [
   "Avis vérifiés d'élèves",
@@ -42,55 +39,6 @@ export const advantages = [
   },
 ];
 
-export const curriculums = [
-  {
-    number: "01",
-    title: "Coran & Tajwid",
-    subtitle: "Mémorisation & perfectionnement de la récitation",
-    audience:
-      "Adultes et enfants lisant déjà couramment le Coran et souhaitant mémoriser ou corriger leur récitation.",
-    goal: "Ancrer la mémorisation sur le long terme tout en maîtrisant les règles de Tajwid, avec un enseignant qualifié.",
-    duration: "Continu, accompagnement sur-mesure.",
-    outcomes: [
-      "Mémorisation progressive structurée selon un programme personnalisé",
-      "Correction minutieuse de la prononciation et maîtrise du Tajwid théorique et pratique",
-      "Méthode de révision solide pour ne plus oublier les sourates acquises",
-    ],
-    included: null,
-  },
-  {
-    number: "02",
-    title: "Débutant",
-    subtitle: "Fondations & lecture fluidifiée du Coran",
-    audience: "Débutants complets ou sachant déchiffrer avec difficulté.",
-    goal: "Passer de zéro à la lecture fluide et autonome du Coran, en règle de Tajwid de base.",
-    duration: null as string | null,
-    outcomes: [
-      "Reconnaissance et prononciation exacte de toutes les lettres arabes (Makharij)",
-      "Lecture fluide des mots complexes avec toutes les voyelles et prolongations",
-      "Application naturelle des règles fondamentales de lecture du Coran",
-    ],
-    included:
-      "Suivi individuel, exercices pratiques entre chaque cours et bilan mensuel.",
-  },
-  {
-    number: "03",
-    title: "Langue Arabe",
-    subtitle: "Comprendre, parler et écrire couramment l'arabe",
-    audience:
-      "Élèves sachant déjà lire l'arabe et souhaitant approfondir la langue arabe.",
-    goal: "Comprendre, écrire et parler couramment l'arabe.",
-    duration: null,
-    outcomes: [
-      "Dialogues de la vie quotidienne et expression orale fluide",
-      "Acquisition d'un vocabulaire de plus de 1000 mots clés",
-      "Compréhension directe des textes sans repasser systématiquement par le français",
-      "Bases solides de grammaire et de conjugaison",
-    ],
-    included: null as string | null,
-    secondary: true,
-  },
-];
 
 export const testimonials = [
   {
