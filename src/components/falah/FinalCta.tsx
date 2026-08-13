@@ -1,5 +1,6 @@
-import { WA_GENERAL } from "@/data/falah";
+import { CALENDLY_CALL } from "@/data/falah";
 import { Icon } from "./Icon";
+
 
 export function FinalCta() {
   return (
@@ -30,14 +31,15 @@ export function FinalCta() {
             studieuse. Un simple message suffit pour démarrer.
           </p>
           <a
-            href={WA_GENERAL}
+            href={CALENDLY_CALL}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-9 inline-flex items-center justify-center gap-2.5 rounded-full bg-whatsapp px-7 py-4 text-sm font-semibold text-whatsapp-foreground shadow-lift transition-transform duration-300 hover:-translate-y-0.5 sm:text-base"
           >
-            <Icon name="whatsapp" className="h-5 w-5" />
-            Contactez-nous sur WhatsApp
+            <Icon name="phone" className="h-5 w-5" />
+            Réservez un appel gratuit
           </a>
+
         </div>
       </div>
     </section>

@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { WA_GENERAL } from "@/data/falah";
+import { CALENDLY_CALL } from "@/data/falah";
 import logo from "@/assets/logo.jpeg";
 import { Icon } from "./Icon";
+
 
 const links = [
   { href: "#cursus", label: "Programmes" },
