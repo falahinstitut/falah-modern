@@ -13,11 +13,6 @@ const parcoursItems = [
     text: "2 séances de groupe (1h30) + 1 séance individuelle (30 min) par semaine",
   },
   {
-    icon: "target" as const,
-    label: "À qui ça s'adresse",
-    text: "Du débutant complet jusqu'à la lecture fluide et autonome avec les règles fondamentales du Tajwid",
-  },
-  {
     icon: "cap" as const,
     label: "Ce que nous enseignons",
     text: "Les lettres arabes (reconnaissance, écriture, bonne prononciation), la lecture fluide, les règles fondamentales du Tajwid, avec un suivi personnalisé",
