@@ -3,7 +3,7 @@ import { SectionHeading } from "./Primitives";
 
 const offerItems = [
   {
-    icon: "calendar" as const,
+    icon: "clock" as const,
     title: "Durée",
     text: "4 mois pour construire une lecture du Coran fluide et solide.",
     highlight: "4 mois",
@@ -15,7 +15,7 @@ const offerItems = [
     highlight: "2 groupes + 1 individuel",
   },
   {
-    icon: "book" as const,
+    icon: "cap" as const,
     title: "Ce que nous enseignons",
     text: "Les lettres arabes (reconnaissance, écriture, bonne prononciation), la lecture fluide et les règles fondamentales du Tajwid, avec un suivi personnalisé.",
     highlight: "Lecture fluide & Tajwid",
