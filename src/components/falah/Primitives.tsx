@@ -36,11 +36,13 @@ export function WhatsAppButton({
   href,
   children,
   variant = "solid",
+  iconName = "whatsapp",
   className = "",
 }: {
   href: string;
   children: React.ReactNode;
   variant?: "solid" | "outline";
+  iconName?: "whatsapp" | "phone";
   className?: string;
 }) {
   const base =
@@ -57,7 +59,7 @@ export function WhatsAppButton({
       rel="noopener noreferrer"
       className={`${base} ${styles} ${className}`}
     >
-      <Icon name="whatsapp" className="h-5 w-5 shrink-0" />
+      <Icon name={iconName} className="h-5 w-5 shrink-0" />
       <span className="min-w-0">{children}</span>
       <Icon
         name="arrow"
@@ -66,3 +68,4 @@ export function WhatsAppButton({
     </a>
   );
 }
+
