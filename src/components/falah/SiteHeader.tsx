@@ -51,7 +51,7 @@ export function SiteHeader() {
                 Falah Institut
               </span>
               <span className="block whitespace-normal text-[0.55rem] leading-tight tracking-wide text-muted-foreground sm:text-[0.7rem]">
-                Arabe et Coran en ligne
+                Lecture du Coran & Tajwid
               </span>
             </span>
           </a>

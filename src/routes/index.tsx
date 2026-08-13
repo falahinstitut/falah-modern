@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Advantages } from "@/components/falah/Advantages";
 import { Curriculums } from "@/components/falah/Curriculums";
 import { Faq } from "@/components/falah/Faq";
+import { Offer } from "@/components/falah/Offer";
 
 import { FinalCta } from "@/components/falah/FinalCta";
 import { Hero } from "@/components/falah/Hero";
@@ -12,9 +13,9 @@ import { TrustpilotSection } from "@/components/falah/TrustpilotSection";
 import { Reveal } from "@/components/falah/Reveal";
 import { WhatsAppFab } from "@/components/falah/WhatsAppFab";
 
-const TITLE = "Falah Institut — Cours d'arabe et de Coran en ligne";
+const TITLE = "Falah Institut — Lecture du Coran & Tajwid";
 const DESCRIPTION =
-  "Cours d'arabe et de Coran en ligne via Zoom pour hommes, femmes et enfants : cursus débutant, langue arabe et mémorisation en petit groupe, 7j/7 de 9h à 21h.";
+  "Apprenez à lire le Coran et maîtrisez les règles du Tajwid en ligne via Zoom, en petit groupe, avec un suivi personnalisé, pour hommes, femmes et enfants.";
 
 const SCHEMA = {
   "@context": "https://schema.org",
@@ -27,13 +28,13 @@ const SCHEMA = {
   sameAs: [],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Cours d’arabe et de Coran",
+    name: "Cours de lecture du Coran & Tajwid",
     itemListElement: [
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Course",
-          name: "Cours collectif d’arabe et de Coran",
+          name: "Cours de lecture du Coran et Tajwid",
           description: "Cours en petit groupe, 2h/semaine, groupes non mixtes.",
         },
       },
@@ -56,7 +57,7 @@ export const Route = createFileRoute("/")({
       { property: "og:image", content: OG_IMAGE_URL },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: "Falah Institut — Cours d'arabe et de Coran en ligne" },
+      { property: "og:image:alt", content: "Falah Institut — Lecture du Coran & Tajwid" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: OG_IMAGE_URL },
       { name: "twitter:title", content: TITLE },
@@ -80,6 +81,9 @@ function Index() {
       <SiteHeader />
       <main>
         <Hero />
+        <Reveal>
+          <Offer />
+        </Reveal>
         <Reveal>
           <Testimonials />
         </Reveal>
