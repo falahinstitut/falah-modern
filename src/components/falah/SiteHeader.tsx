@@ -5,7 +5,7 @@ import { Icon } from "./Icon";
 
 
 const links = [
-  { href: "#cursus", label: "Programmes" },
+  { href: "#cursus", label: "Programme" },
   { href: "#avis", label: "Témoignages" },
   { href: "#faq", label: "FAQ" },
 ];

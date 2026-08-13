@@ -54,7 +54,7 @@ export function Hero() {
               href="#cursus"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-card px-6 py-3.5 text-sm font-semibold text-primary transition-all duration-300 hover:-translate-y-0.5 hover:border-gold sm:text-base"
             >
-              Voir les programmes
+              Voir le programme
             </a>
           </div>
 
