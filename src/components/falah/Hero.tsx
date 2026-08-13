@@ -29,9 +29,9 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-16 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 lg:pb-24">
         <div className="min-w-0">
           <h1 className="mt-6 text-[2.1rem] font-semibold leading-[1.08] text-primary sm:text-5xl lg:text-[3.4rem]">
-            Vous repoussez la lecture du{" "}
-            <span className="italic text-gold">Coran</span> depuis trop
-            longtemps ?
+            Envie de lire le{" "}
+            <span className="italic text-gold">Coran</span> mais vous ne savez
+            pas par où commencer ?
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
