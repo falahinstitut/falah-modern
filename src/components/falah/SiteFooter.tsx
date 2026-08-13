@@ -2,7 +2,7 @@ import { WA_GENERAL } from "@/data/falah";
 import logo from "@/assets/logo.jpeg";
 
 const navLinks = [
-  { href: "#cursus", label: "Programmes" },
+  { href: "#cursus", label: "Programme" },
   { href: "#avis", label: "Témoignages" },
   { href: "#faq", label: "FAQ" },
 ];
