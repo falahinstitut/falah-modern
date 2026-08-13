@@ -35,7 +35,7 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            En 4 mois, apprenez à lire le Coran couramment et maîtrisez les
+            En 4 mois, apprenez à lire le Coran fluidement et maîtrisez les
             règles fondamentales du Tajwid — en petit groupe, avec un suivi
             personnalisé, pour les hommes, les femmes et les enfants.
           </p>
@@ -74,7 +74,7 @@ export function Hero() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-gold/50 bg-primary/5 shadow-card ring-1 ring-primary/10">
               <img
                 src={heroPattern}
-                alt="Motif géométrique islamique doré et bleu nuit"
+                alt="Livre saint du Coran ouvert sur un lutrin en bois, motifs géométriques islamiques dorés et bleu marine"
                 className="h-full w-full object-cover"
                 loading="eager"
                 decoding="async"

@@ -13,7 +13,6 @@ export const highlights = [
   "Avis vérifiés d'élèves",
   "Cours en direct via Zoom",
   "Enseignement authentique",
-  "Réponse rapide sur WhatsApp",
 ];
 
 export const advantages = [
@@ -76,10 +75,6 @@ export const videoTestimonials = [
 
 export const faq = [
   {
-    q: "Je n'ai aucun niveau en arabe, puis-je m'inscrire ?",
-    a: "Bien sûr ! Nos formules s'adaptent à tous les niveaux, du débutant complet à l'élève confirmé. Un premier échange sur WhatsApp permet de définir le point de départ le plus adapté.",
-  },
-  {
     q: "Est-il trop tard pour commencer à l'âge adulte ?",
     a: "Beaucoup pensent qu'il est trop tard pour apprendre à lire le Coran à l'âge adulte, mais la majorité de nos élèves ont commencé ainsi. Avec un rythme régulier et un enseignant qui s'adapte à vous, les progrès viennent sereinement.",
   },
@@ -98,9 +93,5 @@ export const faq = [
   {
     q: "Comment se passe l'inscription ?",
     a: "Rien de plus simple : contactez-nous directement sur WhatsApp en cliquant sur un bouton d'inscription. Nous échangeons ensemble sur vos objectifs et vous accompagnons pour démarrer rapidement.",
-  },
-  {
-    q: "Y a-t-il un engagement de durée ?",
-    a: "Non, nos formules sont sans engagement de durée. Vous restez libre d'ajuster votre formule à tout moment, il suffit de nous en informer sur WhatsApp.",
   },
 ];
