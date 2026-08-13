@@ -14,12 +14,8 @@ const reviews = [
     title: "Très satisfaite !",
     text: "Je suis vraiment très satisfaite, mon enseignante est à l'écoute, disponible. Elle prend le temps d'expliquer les choses clairement et s'adapte à mon rythme. J'ai vraiment bien progressé grâce à ses cours. Je tiens également à souligner la disponibilité et la réactivité de toute l'équipe de l'institut. Ils sont toujours à l'écoute et répondent rapidement aux demandes. Une très bonne expérience que je recommande sans hésiter !",
   },
-  {
-    name: "Daifi Nassera",
-    title: "Je prends des cours d arabe depuis...",
-    text: "Je prends des cours d arabe depuis quelques mois je suis ravie de ma nette progression, mon professeur m apporte beaucoup et est surtout patient...\nJe continuerai à prendre des cours chez Falah institut !!!\nL organisation le planning tout me convient !!\nMerci beaucoup",
-  },
 ];
+
 
 function TrustpilotStars({ className }: { className?: string }) {
   return (
