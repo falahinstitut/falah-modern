@@ -30,12 +30,12 @@ export function SiteFooter() {
                 Falah Institut
               </p>
               <p className="truncate text-xs text-muted-foreground">
-                Cours d’arabe et de Coran en ligne
+                Lecture du Coran & Tajwid
               </p>
             </div>
           </div>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-            Apprenez l’arabe et le Coran en ligne, en petit groupe, avec des enseignants qualifiés.
+            Apprenez à lire le Coran et maîtrisez les règles du Tajwid en ligne, en petit groupe, avec des enseignants qualifiés.
           </p>
         </div>
 

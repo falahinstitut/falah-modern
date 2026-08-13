@@ -77,21 +77,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Falah Institut — Cours d'arabe et de Coran en ligne" },
+      { title: "Falah Institut — Lecture du Coran & Tajwid" },
       {
         name: "description",
         content:
-          "Cours d'arabe et de Coran en ligne via Zoom, en petit groupe, pour hommes, femmes et enfants.",
+          "Apprenez à lire le Coran et maîtrisez les règles du Tajwid en ligne via Zoom, en petit groupe, avec un suivi personnalisé.",
       },
       { name: "author", content: "Falah Institut" },
       {
         property: "og:title",
-        content: "Falah Institut — Cours d'arabe et de Coran en ligne",
+        content: "Falah Institut — Lecture du Coran & Tajwid",
       },
       {
         property: "og:description",
         content:
-          "Cours d'arabe et de Coran en ligne via Zoom, en petit groupe, pour hommes, femmes et enfants.",
+          "Apprenez à lire le Coran et maîtrisez les règles du Tajwid en ligne via Zoom, en petit groupe, avec un suivi personnalisé.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

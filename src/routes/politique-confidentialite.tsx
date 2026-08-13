@@ -35,9 +35,9 @@ function PolitiqueConfidentialite() {
                 Qui sommes-nous ?
               </h2>
               <p className="mt-2">
-                Falah Institut propose des cours d’arabe et de Coran en ligne.
-                La présente politique explique comment nous collectons,
-                utilisons et protégeons vos données personnelles.
+                Falah Institut propose des cours de lecture du Coran et de
+                Tajwid en ligne. La présente politique explique comment nous
+                collectons, utilisons et protégeons vos données personnelles.
               </p>
             </section>
 
@@ -48,9 +48,9 @@ function PolitiqueConfidentialite() {
               <p className="mt-2">
                 Nous collectons uniquement les données que vous nous transmettez
                 volontairement : nom, prénom, numéro de téléphone, adresse
-                e-mail et niveau en arabe. Ces données nous servent à vous
-                recontacter, à organiser vos cours et à gérer
-                votre inscription.
+                e-mail et niveau de lecture du Coran. Ces données nous servent à
+                vous recontacter, à organiser vos cours et à gérer votre
+                inscription.
               </p>
             </section>
 

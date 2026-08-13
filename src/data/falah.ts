@@ -45,6 +45,21 @@ export const advantages = [
 export const curriculums = [
   {
     number: "01",
+    title: "Coran & Tajwid",
+    subtitle: "Mémorisation & perfectionnement de la récitation",
+    audience:
+      "Adultes et enfants lisant déjà couramment le Coran et souhaitant mémoriser ou corriger leur récitation.",
+    goal: "Ancrer la mémorisation sur le long terme tout en maîtrisant les règles de Tajwid, avec un enseignant qualifié.",
+    duration: "Continu, accompagnement sur-mesure.",
+    outcomes: [
+      "Mémorisation progressive structurée selon un programme personnalisé",
+      "Correction minutieuse de la prononciation et maîtrise du Tajwid théorique et pratique",
+      "Méthode de révision solide pour ne plus oublier les sourates acquises",
+    ],
+    included: null,
+  },
+  {
+    number: "02",
     title: "Débutant",
     subtitle: "Fondations & lecture fluidifiée du Coran",
     audience: "Débutants complets ou sachant déchiffrer avec difficulté.",
@@ -59,11 +74,11 @@ export const curriculums = [
       "Suivi individuel, exercices pratiques entre chaque cours et bilan mensuel.",
   },
   {
-    number: "02",
+    number: "03",
     title: "Langue Arabe",
     subtitle: "Comprendre, parler et écrire couramment l'arabe",
     audience:
-      "Élèves sachant déjà lire l'arabe et souhaitant comprendre, parler et écrire couramment.",
+      "Élèves sachant déjà lire l'arabe et souhaitant approfondir la langue arabe.",
     goal: "Comprendre, écrire et parler couramment l'arabe.",
     duration: null,
     outcomes: [
@@ -73,21 +88,7 @@ export const curriculums = [
       "Bases solides de grammaire et de conjugaison",
     ],
     included: null as string | null,
-  },
-  {
-    number: "03",
-    title: "Coran",
-    subtitle: "Mémorisation & perfectionnement de la récitation",
-    audience:
-      "Adultes et enfants lisant déjà couramment le Coran et souhaitant mémoriser ou corriger leur récitation.",
-    goal: "Ancrer la mémorisation sur le long terme tout en maîtrisant les règles de Tajwid, avec un enseignant qualifié.",
-    duration: "Continu, accompagnement sur-mesure.",
-    outcomes: [
-      "Mémorisation progressive structurée selon un programme personnalisé",
-      "Correction minutieuse de la prononciation et maîtrise du Tajwid théorique et pratique",
-      "Méthode de révision solide pour ne plus oublier les sourates acquises",
-    ],
-    included: null,
+    secondary: true,
   },
 ];
 
@@ -132,7 +133,7 @@ export const faq = [
   },
   {
     q: "Est-il trop tard pour commencer à l'âge adulte ?",
-    a: "Beaucoup pensent qu'il est trop tard pour apprendre l'arabe ou le Coran adulte, mais la majorité de nos élèves ont commencé ainsi. Avec un rythme régulier et un enseignant qui s'adapte à vous, les progrès viennent sereinement.",
+    a: "Beaucoup pensent qu'il est trop tard pour apprendre à lire le Coran à l'âge adulte, mais la majorité de nos élèves ont commencé ainsi. Avec un rythme régulier et un enseignant qui s'adapte à vous, les progrès viennent sereinement.",
   },
   {
     q: "Comment se déroulent les cours ?",
