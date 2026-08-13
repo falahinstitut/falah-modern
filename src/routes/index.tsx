@@ -2,8 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Advantages } from "@/components/falah/Advantages";
 import { Curriculums } from "@/components/falah/Curriculums";
 import { Faq } from "@/components/falah/Faq";
-import { Offer } from "@/components/falah/Offer";
-
 import { FinalCta } from "@/components/falah/FinalCta";
 import { Hero } from "@/components/falah/Hero";
 import { SiteFooter } from "@/components/falah/SiteFooter";
@@ -81,9 +79,6 @@ function Index() {
       <SiteHeader />
       <main>
         <Hero />
-        <Reveal>
-          <Offer />
-        </Reveal>
         <Reveal>
           <Testimonials />
         </Reveal>
