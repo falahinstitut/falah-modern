@@ -3,18 +3,20 @@ import { Icon } from "./Icon";
 import { SectionHeading } from "./Primitives";
 
 export function Curriculums() {
+  const main = curriculums.filter((c) => !c.secondary);
+  const secondary = curriculums.find((c) => c.secondary);
+
   return (
     <section id="cursus" className="relative scroll-mt-24 py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="Programmes"
-          title="Nos 3 cursus, expliqués"
-          subtitle="Imaginez lire le Coran couramment, sans hésiter sur chaque mot — c'est ce que nos élèves vivent après quelques mois d'accompagnement. Découvrez le contenu précis de chaque cursus pour choisir celui qui correspond à votre objectif."
+          title="Notre parcours"
+          subtitle="Un chemin clair pour passer de la découverte des lettres à la maîtrise du Coran et du Tajwid."
         />
 
-
-        <div className="mt-14 grid gap-5 lg:grid-cols-3">
-          {curriculums.map((c) => (
+        <div className="mt-14 grid gap-5 lg:grid-cols-2">
+          {main.map((c) => (
             <article
               key={c.title}
               className="surface-card flex flex-col p-7 sm:p-8"
@@ -82,6 +84,31 @@ export function Curriculums() {
             </article>
           ))}
         </div>
+
+        {secondary ? (
+          <div className="mt-5">
+            <article className="surface-card flex flex-col gap-5 p-6 sm:flex-row sm:items-center sm:justify-between">
+              <div className="min-w-0 sm:max-w-sm">
+                <div className="flex items-center gap-3">
+                  <span className="font-display text-2xl font-semibold text-gold/45">
+                    {secondary.number}
+                  </span>
+                  <h3 className="text-lg font-semibold text-primary">
+                    {secondary.title}
+                  </h3>
+                </div>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  {secondary.subtitle}
+                </p>
+              </div>
+              <p className="max-w-xl text-sm leading-relaxed text-foreground/80">
+                {secondary.audience} Option complémentaire pour les élèves qui
+                souhaitent approfondir la langue arabe après avoir acquis une
+                bonne base de lecture.
+              </p>
+            </article>
+          </div>
+        ) : null}
       </div>
     </section>
   );
