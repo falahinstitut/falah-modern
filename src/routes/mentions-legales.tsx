@@ -3,7 +3,7 @@ import { SiteHeader } from "@/components/falah/SiteHeader";
 import { SiteFooter } from "@/components/falah/SiteFooter";
 
 const TITLE = "Mentions légales — Falah Institut";
-const DESCRIPTION = "Mentions légales de Falah Institut, cours d’arabe et de Coran en ligne.";
+const DESCRIPTION = "Mentions légales de Falah Institut, cours de lecture du Coran et de Tajwid en ligne.";
 
 export const Route = createFileRoute("/mentions-legales")({
   head: () => ({

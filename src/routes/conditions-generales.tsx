@@ -36,8 +36,8 @@ function ConditionsGenerales() {
               </h2>
               <p className="mt-2">
                 Les présentes conditions générales de vente régissent la
-                fourniture de cours d’arabe et de Coran en ligne par Falah
-                Institut, accessibles sur inscription via WhatsApp.
+                fourniture de cours de lecture du Coran et de Tajwid en ligne
+                par Falah Institut, accessibles sur inscription via WhatsApp.
               </p>
             </section>
 
@@ -59,8 +59,7 @@ function ConditionsGenerales() {
               <p className="mt-2">
                 Les conditions financières sont communiquées individuellement
                 lors de l’échange d’inscription sur WhatsApp, puis confirmées
-                avant le début des cours. Une première séance découverte est
-                proposée avant tout engagement.
+                avant le début des cours.
               </p>
             </section>
 
