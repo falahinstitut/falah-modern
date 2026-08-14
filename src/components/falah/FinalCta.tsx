@@ -37,7 +37,7 @@ export function FinalCta() {
             className="mt-9 inline-flex items-center justify-center gap-2.5 rounded-full bg-whatsapp px-7 py-4 text-sm font-semibold text-whatsapp-foreground shadow-lift transition-transform duration-300 hover:-translate-y-0.5 sm:text-base"
           >
             <Icon name="phone" className="h-5 w-5" />
-            Réservez un appel gratuit
+            Réservez un appel offert
           </a>
 
         </div>

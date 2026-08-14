@@ -47,7 +47,7 @@ export function Hero() {
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
 
             <WhatsAppButton href={CALENDLY_CALL} iconName="phone">
-              Réservez un appel gratuit
+              Réservez un appel offert
             </WhatsAppButton>
 
             <a
