@@ -5,7 +5,7 @@ const parcoursItems = [
   {
     icon: "clock" as const,
     label: "Durée",
-    text: "4 mois",
+    text: "6 mois",
   },
   {
     icon: "users" as const,
@@ -26,7 +26,7 @@ export function Curriculums() {
         <SectionHeading
           eyebrow="Programme"
           title="Notre parcours"
-          subtitle="Un parcours unique de 4 mois pour apprendre à lire le Coran avec confiance et maîtriser les bases du Tajwid."
+          subtitle="Un parcours unique de 6 mois pour apprendre à lire le Coran avec confiance et maîtriser les bases du Tajwid."
         />
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2">
