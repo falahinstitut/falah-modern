@@ -36,7 +36,7 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            En 4 mois, apprenez à lire le Coran fluidement et maîtrisez les
+            En 6 mois, apprenez à lire le Coran fluidement et maîtrisez les
             règles fondamentales du Tajwid — en petit groupe, avec un suivi
             personnalisé, pour les hommes, les femmes et les enfants.
           </p>
