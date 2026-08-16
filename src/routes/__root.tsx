@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Apprenez à lire le Coran et maîtrisez les règles du Tajwid en ligne via Zoom, en petit groupe, avec un suivi personnalisé.",
+          "Apprenez à lire le Coran et maîtrisez les règles du Tajwid en ligne via Zoom, en petit groupe.",
       },
       { name: "author", content: "Falah Institut" },
       {
@@ -91,7 +91,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         property: "og:description",
         content:
-          "Apprenez à lire le Coran et maîtrisez les règles du Tajwid en ligne via Zoom, en petit groupe, avec un suivi personnalisé.",
+          "Apprenez à lire le Coran et maîtrisez les règles du Tajwid en ligne via Zoom, en petit groupe.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
