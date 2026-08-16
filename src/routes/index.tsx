@@ -12,7 +12,7 @@ import { WhatsAppFab } from "@/components/falah/WhatsAppFab";
 
 const TITLE = "Falah Institut — Lecture du Coran & Tajwid";
 const DESCRIPTION =
-  "Apprenez à lire le Coran et maîtrisez les règles du Tajwid en ligne via Zoom, en petit groupe, avec un suivi personnalisé, pour hommes, femmes et enfants.";
+  "Apprenez à lire le Coran et maîtrisez les règles du Tajwid en ligne via Zoom, en petit groupe, pour hommes, femmes et enfants.";
 
 const SCHEMA = {
   "@context": "https://schema.org",

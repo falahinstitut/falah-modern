@@ -15,7 +15,7 @@ const parcoursItems = [
   {
     icon: "cap" as const,
     label: "Ce que nous enseignons",
-    text: "Les lettres arabes (reconnaissance, écriture, bonne prononciation), la lecture fluide, les règles fondamentales du Tajwid, avec un suivi personnalisé",
+    text: "Les lettres arabes (reconnaissance, écriture, bonne prononciation), la lecture fluide, les règles fondamentales du Tajwid",
   },
 ];
 
