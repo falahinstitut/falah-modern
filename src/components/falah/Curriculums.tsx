@@ -10,7 +10,7 @@ const parcoursItems = [
   {
     icon: "users" as const,
     label: "Format",
-    text: "2 séances de groupe (1h30) + 1 séance individuelle (30 min) par semaine",
+    text: "3h par semaine : 2 séances de groupe de 1h30",
   },
   {
     icon: "cap" as const,
