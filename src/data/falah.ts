@@ -72,8 +72,4 @@ export const faq = [
     q: "Les cours sont-ils mixtes ?",
     a: "Non, les cours ne sont pas mixtes. Les hommes sont enseignés par des hommes et les femmes par des femmes. De même, il n'y a pas de mixité au sein des groupes.",
   },
-  {
-    q: "Comment se passe l'inscription ?",
-    a: "Rien de plus simple : contactez-nous directement sur WhatsApp en cliquant sur un bouton d'inscription. Nous échangeons ensemble sur vos objectifs et vous accompagnons pour démarrer rapidement.",
-  },
 ];
